@@ -49,6 +49,7 @@ header .menu img{
 
 
 .toTop{
+	display: none;
 	width: 40px;
 	height: 40px;
 	position: fixed;
@@ -250,8 +251,8 @@ th,td{
 	.tabBox1 .tabPart > li.show{background-color: #CBE0F0;}
 	.tabBox1 .tabPart.col2 > li{width: 50%;}
 	.tabBox1 .tabPart.col3 > li{width: 33.3333%;}
-.tabBox1 .tabConts > *[class^="tabContNo"]{display: none;}
-.tabBox1 .tabConts > *[class^="tabContNo"].show{display: block;}
+.tabBox1 .tabConts > li{display: none;}
+.tabBox1 .tabConts > li.show{display: block;}
 
 
 /* アコーディオン */
