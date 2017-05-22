@@ -190,13 +190,12 @@ th,td{
 	.detailOpen.on:after{
 		background: url(../images/arrow.png) no-repeat left top;
 	}
-	.detailOpen:after{
-	}
-
+.detailOpen + .acrdPart{
+	margin-top: 2%;
+}
 
 /* タブの切替パーツ */
-.tabBox1{
-}
+.tabBox1{}
 .tabBox1 .tabPart{
 	width: 93%;
 	margin-left:auto;
@@ -222,12 +221,9 @@ th,td{
 
 
 /* アコーディオン */
-.acrdBox1{
-}
+.acrdBox1{}
 	.acrdBox1 + .acrdBox1{margin-top: 3%;}
-.acrdBox1 .acrdBtn{
-	position: relative;
-}
+.acrdBox1 .acrdBtn{position: relative;}
 	.acrdBox1 .acrdBtn:after{
 		content: "";
 		display: block;
