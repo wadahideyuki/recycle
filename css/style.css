@@ -117,7 +117,23 @@ header .menu img{
 		color: #fff;
 	}
 
-
+.btnList{
+	background:#fff url(../images/arrow_r.png) no-repeat 98% center;
+	background-size: 7px 13px;
+	display: block;
+	border: 2px solid #127CCD;
+	padding: 3% 5% 3% 4%;
+	margin: 3%;
+	color: #127CCD;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 12px;
+}
+.btnList strong{
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
 /* テーブル */
 th,td{
 	padding: 2.3%;
@@ -171,8 +187,26 @@ th,td{
 	border-radius: 0 3px 3px 0;
 	border: none;
 }
+.tblLogin{
+	border: 1px solid #DDDDDD;
+}
+.tblLogin td{
+	border: none;
+	padding: 4%;
+	width: 58%;
+	text-align: left;
 
-
+}
+.tblLogin input{
+	width: 95%;
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	padding: 2%;
+}
+.tblLogin th{
+	width: 35%;
+	border: none;
+}
 
 
 .detailOpen{
@@ -247,6 +281,14 @@ th,td{
 
 
 
+.txtLogin{
+	position: absolute;
+	text-align: center;
+	width: 95%;
+	margin: 0 auto;
+	bottom: 10px;
+	left: 0px;
+}
 
 
 /*------------------------
@@ -556,7 +598,7 @@ th,td{
 
 .P30_0{padding:30px 0;}
 
-.PT0{padding-top:0px;}
+.PT0{padding-top:0px !important;}
 .PT1{padding-top:1px;}
 .PT2{padding-top:2px;}
 .PT3{padding-top:3px;}
@@ -650,7 +692,7 @@ th,td{
 .PR60{padding-right:60px;}
 .PRex{padding-right:65px;}
 
-.PB0{padding-bottom:0px;}
+.PB0{padding-bottom:0px !important;}
 .PB1{padding-bottom:1px;}
 .PB2{padding-bottom:2px;}
 .PB3{padding-bottom:3px;}
