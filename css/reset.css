@@ -75,18 +75,19 @@ body{
 	margin:0;
 	padding:0;
 	font-family:"メイリオ",Meiryo,"ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic Pro W3", Osaka, Arial, Helvetica, sans-serif;
+	font-size: 12px;
 	color:#000000;
 }
 
 a{
 	color:#00A184;
-	text-decoration:none;
+	text-decoration:underline;
 	cursor:pointer;
 }
 
 a:hover{
 	color:#00A184;
-	text-decoration:underline;
+	text-decoration:none;
 }
 
 .clearfix:after{
