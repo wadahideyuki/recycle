@@ -157,6 +157,9 @@ th,td{
 .tblBeige{
 	border-top: 5px solid #CECEBF;
 }
+.tblBeige.nobd{
+	border-top: 0px;
+}
 .tblBeige th{
 	background: #FAFAF8;
 }
@@ -291,7 +294,12 @@ th,td{
 	left: 0px;
 }
 
-
+.iconArrowU{
+	text-align: center;
+	padding: 1% 0 0 0;
+	width: 9%;
+	margin: 0 auto;
+}
 /*------------------------
          CLASS
 ------------------------*/
@@ -467,7 +475,7 @@ th,td{
 .MR60{margin-right:60px;}
 .MRex{margin-right:65px;}
 
-.MB0{margin-bottom:0px;}
+.MB0{margin-bottom:0px !important;}
 .MB1{margin-bottom:1px;}
 .MB2{margin-bottom:2px;}
 .MB3{margin-bottom:3px;}
