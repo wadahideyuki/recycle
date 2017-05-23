@@ -153,6 +153,11 @@ th,td{
 .tblBlue th{
 	background: #F3F8FC;
 }
+.tblBlue.is_type2 th{
+	width: 23.5%;
+}
+
+
 
 .tblBeige{
 	border-top: 5px solid #CECEBF;
