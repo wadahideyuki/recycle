@@ -158,8 +158,19 @@ th,td{
 .tblBlue.is_type2 th{
 	width: 23.5%;
 }
-
-
+.tblBlue.is_type3{
+	border: 1px solid #DDDDDD;
+}
+.tblBlue.is_type3 th,
+.tblBlue.is_type3 td{
+	border-left: 0;
+	border-right: 0;
+}
+.tblBlue.is_type3 th{
+	width: 23.5%;
+}
+.tblBlue.is_type4 th{
+}
 
 .tblBeige{
 	border-top: 5px solid #CECEBF;
