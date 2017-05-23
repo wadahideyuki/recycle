@@ -57,6 +57,9 @@ header .menu img{
 	right: 10px;
 }
 	.toTop img{width: 100%;}
+
+
+/* フォーム */
 select{
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -67,7 +70,9 @@ select{
 	border-radius: 5px;
 	border: 1px solid #DDDDDD;
 }
-
+input[type="radio"]{
+	display: none;
+}
 
 
 .content{
@@ -146,6 +151,16 @@ select{
 	font-weight: bold;
 	display: block;
 }
+
+
+/* 箱 */
+.whiteBox1{
+	background-color: #fff;
+	padding:3%;
+	border: 1px solid #ddd;
+}
+
+
 /* テーブル */
 th,td{
 	padding: 2.3%;
@@ -179,9 +194,6 @@ th,td{
 }
 .tblBlue.is_type3 th{
 	width: 23.5%;
-}
-.tblBlue.bdT{
-	border-top: 5px solid #127CCD;
 }
 
 .tblBeige{
@@ -246,6 +258,36 @@ table.tblBDTN tr:first-child td{
 	border-top: none;
 }
 
+
+/* リスト */
+.rdoList1{
+	border: 1px solid #C8C8C8;
+	border-radius: 8px;
+}
+.rdoList1 > li{
+}
+.rdoList1 > li + li{
+	border-top: 1px solid #ddd;
+}
+.rdoList1 > li > *{
+	
+}
+.rdoList1 label{
+	display: block;
+	padding: 2%;
+	position: relative;
+}
+	.rdoList1 label:before{
+		content: "";
+		display: block;
+		background-color: #fff;
+		border: 1px solid #C8C8C8;
+		ここから
+	}
+.rdoList1 input[type="radio"]{
+}
+
+
 .detailOpen{
 	display: block;
 	background: #FFF;
@@ -305,9 +347,11 @@ table.tblBDTN tr:first-child td{
 	padding: 0px 5px;
 }
 
+
 /* タブの切替パーツ */
 .tabBox1{}
 .tabBox1 .tabPart{
+	display: table;
 	width: 93%;
 	margin-left:auto;
 	margin-right:auto;
@@ -318,10 +362,10 @@ table.tblBDTN tr:first-child td{
 	overflow: hidden;
 }
 .tabBox1 .tabPart > li{
-	display: inline-block;
+	display: table-cell;
 	padding: 2.3%;
 	letter-spacing: normal;
-	vertical-align: top;
+	vertical-align: middle;
 	box-sizing: border-box;
 }
 	.tabBox1 .tabPart > li.show{background-color: #CBE0F0;}
@@ -379,26 +423,6 @@ table.tblBDTN tr:first-child td{
 	width: 9%;
 	margin: 0 auto;
 }
-
-.resultBox{
-	position: relative;
-}
-
-.btnBlue{
-	display: inline-block;
-	padding: 5%;
-	color: #FFF;
-	background: #127CCD;
-	border-radius: 5px;
-	text-decoration: none;
-	
-}
-.resultBox .btnBlue{
-	position: absolute;
-	right: 0px;
-margin: -5%;
-}
-
 /*------------------------
          CLASS
 ------------------------*/
