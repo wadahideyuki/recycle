@@ -147,6 +147,7 @@ th,td{
 		border-right: 0px;
 	}
 	td{
+		color: #868686;
 		border-left: 0px;
 	}
 
@@ -169,7 +170,6 @@ th,td{
 	background: #FAFAF8;
 }
 .tblBeige td{
-	color: #878787;
 }
 .tblBeige a{
 	color: #127CCD;
