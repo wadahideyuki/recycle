@@ -57,6 +57,16 @@ header .menu img{
 	right: 10px;
 }
 	.toTop img{width: 100%;}
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background:url(../images/slct_arw.png) 97% center no-repeat #fff;
+	background-size: 8px 7px;
+	padding: 2%;
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+}
 
 
 
@@ -257,12 +267,40 @@ table.tblBDTN tr:first-child td{
 
 /* ページャー */
 .pagerBox{
-	
+	display: table;
+	width: 100%;
+	margin: 3.3333% 0;
 }
 .pagerBox > li{
-	
+	display: table-cell;
+	vertical-align: middle;
 }
-
+.pagerBox > li.celGaito{
+}
+.pagerBox > li.celPage{
+	text-align: center;
+}
+.pagerBox > li.celPage *{
+	display: inline-block;
+	vertical-align: middle;
+}
+.pagerBox > li.celPage span{
+	margin: 0 10px;
+}
+.pagerBox > li.celPage img{
+	width: 30px;
+}
+	.pagerBox.pageFirst > li.celPage .pagePre,
+	.pagerBox.pageLast > li.celPage .pageNxt{opacity: 0.5;}
+.pagerBox > li.celKensu{
+	text-align: right;
+}
+.pagerBox > li.celKensu select{
+	background-position: 55px center;
+	width: 70px;
+	height: 30px;
+	padding: 0px 5px;
+}
 
 /* タブの切替パーツ */
 .tabBox1{}
