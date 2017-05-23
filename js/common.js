@@ -35,7 +35,7 @@ $(".tabBox1 .tabPart > li").click(function(){
 var sclNum = 0;
 $(window).scroll(function(){
 	sclNum = $(window).scrollTop();
-	if(sclNum > 700){	$(".toTop").fadeIn("fast");}
+	if(sclNum > 300){	$(".toTop").fadeIn("fast");}
 	else{	$(".toTop").fadeOut("fast");}
 });
 //clickによるスクロール

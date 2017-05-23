@@ -169,8 +169,6 @@ th,td{
 .tblBlue.is_type3 th{
 	width: 23.5%;
 }
-.tblBlue.is_type4 th{
-}
 
 .tblBeige{
 	border-top: 5px solid #CECEBF;
@@ -229,6 +227,10 @@ th,td{
 	border: none;
 }
 
+table.tblBDTN tr:first-child th,
+table.tblBDTN tr:first-child td{
+	border-top: none;
+}
 
 .detailOpen{
 	display: block;
@@ -298,6 +300,9 @@ th,td{
 		.acrdBox1.opn .acrdBtn:after{background-position: left top;}
 .acrdBox1 .acrdPart{
 	display: none;
+}
+.acrdBox1 .acrdPart.opnPB1{
+	padding-bottom: 3%;
 }
 .acrdBox1 .acrdPart table{
 	margin-bottom: 0;
