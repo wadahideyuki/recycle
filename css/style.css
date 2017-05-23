@@ -170,6 +170,9 @@ th,td{
 .tblBlue.is_type3 th{
 	width: 23.5%;
 }
+.tblBlue.bdT{
+	border-top: 5px solid #127CCD;
+}
 
 .tblBeige{
 	border-top: 5px solid #CECEBF;
@@ -338,6 +341,26 @@ table.tblBDTN tr:first-child td{
 	width: 9%;
 	margin: 0 auto;
 }
+
+.resultBox{
+	position: relative;
+}
+
+.btnBlue{
+	display: inline-block;
+	padding: 5%;
+	color: #FFF;
+	background: #127CCD;
+	border-radius: 5px;
+	text-decoration: none;
+	
+}
+.resultBox .btnBlue{
+	position: absolute;
+	right: 0px;
+margin: -5%;
+}
+
 /*------------------------
          CLASS
 ------------------------*/
