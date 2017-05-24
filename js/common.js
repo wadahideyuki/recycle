@@ -29,6 +29,18 @@ $(".tabBox1 .tabPart > li").click(function(){
 });//.tabBox1 .tabPart > li ClkEnd
 
 
+/*----- .rdoList1 -----*/
+
+$(".rdoList1 input:radio").click(function(){
+	var parent = $(this).parents(".rdoList1");
+	//行の背景色を変える
+	parent.children("li").removeClass("show");
+	$(this).parent("li").addClass("show");
+});
+/*----- /.rdoList1 -----*/
+
+
+
 
 /*----- toTopボタン -----*/
 //表示非表示

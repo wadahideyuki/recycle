@@ -70,9 +70,33 @@ select{
 	border-radius: 5px;
 	border: 1px solid #DDDDDD;
 }
-input[type="radio"]{
-	display: none;
-}
+
+input[type="radio"]{display: none;}
+.rdo1{position: relative;}
+	.rdo1:before,
+	input[type="radio"]:checked + .rdo1:after{
+		content: "";
+		display: inline-block;
+		margin: auto;
+		vertical-align: middle;
+		border-radius: 50%;
+	}
+		.rdo1:before{
+			background-color: #fff;
+			width: 18px;
+			height: 18px;
+			margin-right: 9px;
+			border: 1px solid #C8C8C8;
+		}
+		.rdo1:after{
+			background-color: #999;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 6px;
+		}
 
 
 .content{
@@ -260,32 +284,20 @@ table.tblBDTN tr:first-child td{
 
 
 /* リスト */
-.rdoList1{
+.rdoList1{/* 1つのradioが1行のclick領域の時  */
 	border: 1px solid #C8C8C8;
 	border-radius: 8px;
+	overflow: hidden;
 }
 .rdoList1 > li{
 }
-.rdoList1 > li + li{
-	border-top: 1px solid #ddd;
-}
-.rdoList1 > li > *{
-	
-}
+	.rdoList1 > li.show{background-color:#CBE0F0;}
+	.rdoList1 > li + li{border-top: 1px solid #ddd;}
 .rdoList1 label{
 	display: block;
-	padding: 2%;
-	position: relative;
+	padding: 2% 2% 2% 6px;
 }
-	.rdoList1 label:before{
-		content: "";
-		display: block;
-		background-color: #fff;
-		border: 1px solid #C8C8C8;
-		ここから
-	}
-.rdoList1 input[type="radio"]{
-}
+	.rdoList1 label:after{left: 12px;}
 
 
 .detailOpen{
