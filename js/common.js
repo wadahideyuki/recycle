@@ -30,13 +30,17 @@ $(".tabBox1 .tabPart > li").click(function(){
 
 
 /*----- .rdoList1 -----*/
-
 $(".rdoList1 input:radio").click(function(){
 	var parent = $(this).parents(".rdoList1");
 	//行の背景色を変える
 	parent.children("li").removeClass("show");
+	var No = $(this).parent("li").attr("class");
 	$(this).parent("li").addClass("show");
-});
+
+	//コンテンツの切替
+	$(".rdoList1Cont > li").hide();
+	$(".rdoList1Cont > li." + No).show();
+});//.rdoList1 input:radio ClkEnd
 /*----- /.rdoList1 -----*/
 
 
