@@ -285,6 +285,7 @@ table.tblBDTN tr:first-child td{
 
 /* リスト */
 .rdoList1{/* 1つのradioが1行のclick領域の時  */
+	margin-bottom: 6.25%;
 	border: 1px solid #C8C8C8;
 	border-radius: 8px;
 	overflow: hidden;
