@@ -44,6 +44,26 @@ $(".rdoList1 input:radio").click(function(){
 /*----- /.rdoList1 -----*/
 
 
+/*----- selectの色を変える -----*/
+//読込時
+$(window).bind("load", function(){
+	$(".slctClr").each(function(){
+		if($(this).val() == ""){
+			$(this).addClass("unselect");
+		}else{
+			$(this).removeClass("unselect");
+		}
+	});//.slctClr EachEnd
+});
+//選択時
+$(".slctClr").change(function(){
+	if($(this).val() == ""){
+		$(this).addClass("unselect");
+	}else{
+		$(this).removeClass("unselect");
+	}
+});//.slctClr ChgEnd
+/*----- /selectの色を変える -----*/
 
 
 /*----- toTopボタン -----*/

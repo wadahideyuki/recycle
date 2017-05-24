@@ -28,12 +28,12 @@
 
 			<div class="whiteBox1">
 				<div class="tabBox1">
-					<ul class="tabPart col2">
+					<ul class="tabPart col2 W100P">
 						<li class="tabNo1 show">車両関連情報</li>
 						<li class="tabNo2">移動報告(ＥＬＶのみ)実施事業者関連情報</li>
 					</ul>
 
-					<ul class="tabConts">
+					<ul class="tabConts PT10">
 						<li class="tabContNo1 show">
 							<ul class="rdoList1">
 								<li class="listItem1"><input type="radio" name="JOSS8010_radSyryjyh" value="SydiNo" id="radio1"><label class="rdo1" for="radio1">車台番号</label></li>
@@ -42,7 +42,7 @@
 								<li class="listItem4"><input type="radio" name="JOSS8010_radSyryjyh" id="radio4" value="TrkNo"><label class="rdo1" for="radio4">登録番号・車両番号</label></li>
 							</ul>
 
-							<ul class="rdoList1Cont">
+							<ul class="rdoList1Cont formTbl1">
 								<li class="listItem1">
 									<table>
 										<tbody>
@@ -62,7 +62,7 @@
 											<tr>
 												<th rowspan="2">職権打刻番号</th>
 												<td class="colNo2">
-													<select name="JOSS8010_selSykndkkNo1">
+													<select name="JOSS8010_selSykndkkNo1" class="slctClr unselect">
 														<option value="" selected="selected">選択</option>
 														<option value="国">国</option>
 														<option value="札">札</option>
@@ -126,7 +126,7 @@
 											</tr>
 											<tr>
 												<td class="colNo2">
-													<input type="text" name="JOSS8010_txtSykndkkNo3" maxlength="7" value=""  class="imeActive" placeholder="例）0000000">
+													<input type="text" name="JOSS8010_txtSykndkkNo3" maxlength="7" value="" class="imeActive" placeholder="例）0000000">
 													<small class="note">[半角数字]</small>
 												</td>
 												<td class="colNo2_2">
@@ -155,7 +155,7 @@
 											<tr>
 												<th rowspan="2">登録番号・車両番号</th>
 												<td class="colNo3">
-													<select name="JOSS8010_selSkyk">
+													<select name="JOSS8010_selSkyk" class="slctClr unselect">
 														<option value="" selected="selected">選択</option>
 														<option value="札">札</option>
 														<option value="札幌">札幌</option>
@@ -334,8 +334,8 @@
 											</tr>
 											<tr>
 												<td class="colNo3">
-													<select name="JOSS8010_selKnmj" class="unselect">
-														<option value="　">選択</option>
+													<select name="JOSS8010_selKnmj" class="slctClr unselect">
+														<option value="">選択</option>
 														<option value="あ">あ</option>
 														<option value="い">い</option>
 														<option value="う">う</option>
@@ -400,20 +400,116 @@
 						</li><!--/.tabContNo1-->
 
 						<li class="tabContNo2">
+							<ul class="formTbl1">
+								<li>
+									<table>
+										<tbody>
+											<tr>
+												<th>
+													<span class="reqTxt">事務所コード</span>
+													<em class="require">必須</em>
+												</th>
+												<td>
+													<input type="text" name="JOSS8010_txtZgyusyCd" maxlength="12" size="12" value="" class="imeOff" placeholder="例）名古屋支局">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li>
+									<p class="txt1 MB10">「引取報告年月」「引渡報告年月」は、両方、又はいずれかを選択して検索条件を指定することができます。</p>
+									<table>
+										<tbody>
+											<tr class="chkSlctRow1">
+												<th>
+													<input type="checkbox" name="JOSS8010_chkHktrHukkbjyh" value="on" id="check1">
+													<label class="chk1" for="check1">引取報告年月</label>
+												</th>
+												<td>
+													<select name="JOSS8010_selHktrYear">
+														<option value="2012">2012</option>
+														<option value="2013">2013</option>
+														<option value="2014">2014</option>
+														<option value="2015">2015</option>
+														<option value="2016">2016</option>
+														<option value="2017" selected="selected">2017</option>
+													</select>
+													<span>年</span>
+												</td>
+												<td>
+													<select name="JOSS8010_selHktrMon">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4" selected="selected">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+													<span>月</span>
+												</td>
+											</tr>
+											<tr class="chkSlctRow1">
+												<th>
+													<input type="checkbox" name="JOSS8010_chkHkwtHukkbjyh" value="on" id="check2">
+													<label class="chk1" for="check2">引渡報告年月</label>
+												</th>
+												<td>
+													<select name="JOSS8010_selHkwtYear">
+														<option value="2012">2012</option>
+														<option value="2013">2013</option>
+														<option value="2014">2014</option>
+														<option value="2015">2015</option>
+														<option value="2016">2016</option>
+														<option value="2017" selected="selected">2017</option>
+													</select>
+													<span>年</span>
+												</td>
+												<td>
+													<select name="JOSS8010_selHkwtMon" >
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4" selected="selected">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+													</select>
+													<span>月</span>
+												</td>
+											</tr>
+											<tr>
+												<th>車名</th>
+												<td colspan="2">
+													<input type="text" name="JOSS8010_txtSymi" maxlength="28" size="56" value="" class="imeActive" placeholder="例）テスト車名">
+												</td>
+											</tr>
+											<tr>
+												<th>型式</th>
+												<td colspan="2">
+													<input type="text" name="JOSS8010_txtKtsk" maxlength="17" size="17" value="" class="imeOff" placeholder="例）00000000000000000">
+													<small class="note">[半角数字]</small>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
 						</li><!--/.tabContNo2-->
 					</ul><!--/.tabConts-->
 				</div><!--/.tabBox1-->
 			</div><!--/.whiteBox1-->
 		</section>
-
-<!--↓コピペしたもの↓-->
-<br>
-<br>
-<br>
-<br>
-<br>
-					
-<!--↑コピペしたもの↑-->
 
 
 		<section>

@@ -86,6 +86,24 @@ input[type="radio"]{display: none;}
 			bottom: 0;
 			left: 6px;
 		}
+input[type="checkbox"]{display: none;}
+.chk1{
+	display: inline-block;
+	position: relative;
+}
+	.chk1:before{
+		content: "";
+		display: inline-block;
+		background:url(../images/chk1.png) 0 0 no-repeat;
+		background-size: 30px 30px;
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+	input[type="checkbox"]:checked + .chk1:before{
+		background-image: url(../images/chk1_on.png);
+	}
 
 select{
 	-webkit-appearance: none;
@@ -95,7 +113,18 @@ select{
 	background-size: 8px 7px;
 	padding: 2%;
 	border-radius: 5px;
-	border: 1px solid #DDDDDD;
+	border: 1px solid #DDD;
+}
+
+.require{
+	display: inline-block;
+	background-color: #D80000;
+	width: 32px;
+	height: 20px;
+	color: #fff;
+	font-size: 9px;
+	text-align: center;
+	line-height: 20px;
 }
 
 
@@ -189,7 +218,7 @@ select{
 th,td{
 	padding: 2.3%;
 	font-size: 12px;
-	border: 1px solid #DDDDDD;
+	border: 1px solid #DDD;
 	background: #FFF;
 }
 	th{
@@ -208,8 +237,8 @@ th,td{
 	width: 23.5%;
 }
 .tblBlue.is_type3{/*cellの左右に線無し,tableの左右に線有り*/
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
 }
 .tblBlue.is_type3 th,
 .tblBlue.is_type3 td{
@@ -239,7 +268,7 @@ th,td{
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom: 5%;
-	border: 1px solid #DDDDDD;
+	border: 1px solid #DDD;
 	border-radius: 8px;
 	overflow: hidden;
 }
@@ -257,7 +286,7 @@ th,td{
 	border: none;
 }
 .tblLogin{
-	border: 1px solid #DDDDDD;
+	border: 1px solid #DDD;
 }
 .tblLogin td{
 	border: none;
@@ -269,7 +298,7 @@ th,td{
 .tblLogin input{
 	width: 95%;
 	border-radius: 5px;
-	border: 1px solid #DDDDDD;
+	border: 1px solid #DDD;
 	padding: 2%;
 }
 .tblLogin th{
@@ -280,6 +309,95 @@ th,td{
 table.tblBDTN tr:first-child th,
 table.tblBDTN tr:first-child td{
 	border-top: none;
+}
+
+.formTbl1{
+}
+.formTbl1 *{box-sizing: border-box;}
+.formTbl1 table{margin: 0;}
+.formTbl1 td,
+.formTbl1 th{
+	padding: 0 0 10px;
+	vertical-align: top;
+	border: none;
+}
+.formTbl1 th{
+	width: 40%;
+	padding-top: 6px;
+}
+.formTbl1 td{
+}
+	.formTbl1 td.colNo2{
+		width: 40%;
+		padding-right: 5px;
+	}
+	.formTbl1 td.colNo2_2{
+		width: 20%;
+		padding-left: 5px;
+	}
+	.formTbl1 td.colNo3{
+		width: 30%;
+		padding-right: 5px;
+	}
+	.formTbl1 td.colNo3_2{
+		width: 30%;
+		padding-left: 5px;
+	}
+.formTbl1 input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 30px;
+	padding: 0 5px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+}
+	.formTbl1 input[readonly]{
+		background-color: #EBEEF1;
+		border: none;
+	}
+.formTbl1 select{
+	background:url(../images/slct_arw2.png) 92% center no-repeat #fff;
+	background-size: 8px 7px;
+	width: 100%;
+	height: 30px;
+	padding: 0 5px;
+}
+.formTbl1 select.unselect{
+	color: #bbb;
+}
+.formTbl1 .chkSlctRow1 th{
+	padding-top: 0;
+}
+.formTbl1 .chkSlctRow1 td{
+	width: 30%;
+	text-align: right;
+}
+.formTbl1 .chkSlctRow1 td select{
+	width: 70%;
+}
+.formTbl1 .note{
+	display: block;
+	margin-top: 3px;
+	color: #D80000;
+	font-size: 10px;
+}
+.formTbl1 .reqTxt{
+	display: inline-block;
+	line-height: 19px;
+	vertical-align: top;
+}
+.formTbl1 .require{
+	margin-top: -1px;
+	vertical-align: top;
+}
+.formTbl1 .txt1{
+	background-color: #EBEEF1;
+	padding: 3px 5px;
+	color: #D80000;
+	font-size: 10px;
+	line-height: 1.2;
 }
 
 
@@ -297,72 +415,9 @@ table.tblBDTN tr:first-child td{
 	padding: 2% 2% 2% 6px;
 }
 	.rdoList1 label:after{left: 12px;}
+
 .rdoList1Cont{margin-top: 6.25%;}
-.rdoList1Cont *{box-sizing: border-box;}
-.rdoList1Cont > li{
-	display: none;
-}
-.rdoList1Cont table{
-	margin: 0;
-}
-.rdoList1Cont td,
-.rdoList1Cont th{
-	padding: 0 0 10px;
-	vertical-align: top;
-	border: none;
-}
-.rdoList1Cont th{
-	width: 40%;
-	padding-top: 7px;
-}
-.rdoList1Cont td{
-}
-	.rdoList1Cont td.colNo2{
-		width: 40%;
-		padding-right: 5px;
-	}
-	.rdoList1Cont td.colNo2_2{
-		width: 20%;
-		padding-left: 5px;
-	}
-	.rdoList1Cont td.colNo3{
-		width: 30%;
-		padding-right: 5px;
-	}
-	.rdoList1Cont td.colNo3_2{
-		width: 30%;
-		padding-left: 5px;
-	}
-.rdoList1Cont input{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	width: 100%;
-	height: 30px;
-	padding: 0 5px;
-	border: 1px solid #DDDDDD;
-	border-radius: 5px;
-}
-	.rdoList1Cont input[readonly]{
-		background-color: #EBEEF1;
-		border: none;
-	}
-.rdoList1Cont select{
-	background:url(../images/slct_arw2.png) 92% center no-repeat #fff;
-	background-size: 8px 7px;
-	width: 100%;
-	height: 30px;
-	padding: 0 5px;
-}
-.rdoList1Cont select.unselect{
-	color: #bbb;
-}
-.rdoList1Cont .note{
-	display: block;
-	margin-top: 3px;
-	color: #D80000;
-	font-size: 10px;
-}
+.rdoList1Cont > li{display: none;}
 
 
 
@@ -437,7 +492,7 @@ table.tblBDTN tr:first-child td{
 	margin-right:auto;
 	margin-bottom: 3%;
 	letter-spacing: -0.4em;
-	border: 1px solid #DDDDDD;
+	border: 1px solid #DDD;
 	border-radius: 8px;
 	overflow: hidden;
 }
@@ -523,7 +578,7 @@ table.tblBDTN tr:first-child td{
 .BDBN{border-bottom: none !important;}
 .BDRN{border-right: none !important;}
 .BDLN{border-left: none !important;}
-.BDGrey1{border: 1px solid #DDDDDD !important;}
+.BDGrey1{border: 1px solid #DDD !important;}
 
 
 /* Font */
@@ -574,6 +629,29 @@ table.tblBDTN tr:first-child td{
 .fltL{float:left !important;}
 .fltR{float:right !important;}
 .fltN{float:none !important;}
+
+/* Width */
+.W0{width:0 !important;}
+.W5P{width:5% !important;}
+.W10P{width:10% !important;}
+.W15P{width:15% !important;}
+.W20P{width:20% !important;}
+.W25P{width:25% !important;}
+.W30P{width:30% !important;}
+.W35P{width:35% !important;}
+.W40P{width:40% !important;}
+.W45P{width:45% !important;}
+.W50P{width:50% !important;}
+.W55P{width:55% !important;}
+.W60P{width:60% !important;}
+.W65P{width:65% !important;}
+.W70P{width:70% !important;}
+.W75P{width:75% !important;}
+.W80P{width:80% !important;}
+.W85P{width:85% !important;}
+.W90P{width:90% !important;}
+.W95P{width:95% !important;}
+.W100P{width:100% !important;}
 
 /* Margin */
 .M0{margin:0 !important;}
