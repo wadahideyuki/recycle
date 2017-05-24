@@ -60,6 +60,12 @@ header .menu img{
 
 
 /* フォーム */
+input[type="text"],
+input[type="password"]{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 input[type="radio"]{display: none;}
 .rdo1{position: relative;}
 	.rdo1:before,
@@ -415,6 +421,10 @@ table.tblBDTN tr:first-child td{
 	padding: 2% 2% 2% 6px;
 }
 	.rdoList1 label:after{left: 12px;}
+.rdoList1 label span{
+	display: inline-block;
+	vertical-align: middle;
+}
 
 .rdoList1Cont{margin-top: 6.25%;}
 .rdoList1Cont > li{display: none;}
