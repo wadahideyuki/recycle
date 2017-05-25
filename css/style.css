@@ -8,6 +8,7 @@ header{
 }
 header h1{
 	font-size: 16px;
+	font-size: 5vw;
 	color: #00A184;
 }
 
@@ -37,6 +38,7 @@ header .menu img{
 .ttlArea{
 	background: #CBE0F0;
 	font-size: 10px;
+	font-size: 3.125vw;
 	position: relative;
     padding: 1% 2%;
 }
@@ -129,6 +131,7 @@ select{
 	height: 20px;
 	color: #fff;
 	font-size: 9px;
+	font-size: 2.9vw;
 	text-align: center;
 	line-height: 20px;
 }
@@ -154,7 +157,8 @@ select{
 .ttlBlue{
 	background: #CBE0F0;
     border-left: 6px solid #127CCD;
-	font-size: 14px;
+	font-size:14px;
+	font-size: 4.375vw;
     font-weight: bold;
     padding: 3% 3% 3% 5%;
     margin:0 0 3% 0;
@@ -163,7 +167,8 @@ select{
 	background: #CECEBF;
 	margin-bottom: 2%;
 	padding: 3% 3% 3% 5%;
-	font-size: 14px;
+	font-size:14px;
+	font-size: 4.375vw;
 	font-weight: bold;
 	border-left: 6px solid #A2A284;
 }
@@ -182,6 +187,7 @@ select{
 		width: 120px;
 		height: 40px;
 		font-size: 14px;
+		font-size: 4.375vw;
 		line-height: 40px;
 	}
 	.btn1.is_clr1{
@@ -204,9 +210,11 @@ select{
 	text-decoration: none;
 	border-radius: 5px;
 	font-size: 12px;
+font-size: 3.75vw;
 }
 .btnList strong{
-	font-size: 14px;
+	font-size:14px;
+	font-size: 4.375vw;
 	font-weight: bold;
 	display: block;
 }
@@ -224,6 +232,7 @@ select{
 th,td{
 	padding: 2.3%;
 	font-size: 12px;
+font-size: 3.75vw;
 	border: 1px solid #DDD;
 	background: #FFF;
 }
@@ -391,6 +400,7 @@ table.tblBDTN tr:first-child td{
 	margin-top: 3px;
 	color: #D80000;
 	font-size: 10px;
+	font-size: 3.125vw;
 }
 .formTbl1 .reqTxt{
 	display: inline-block;
@@ -406,6 +416,7 @@ table.tblBDTN tr:first-child td{
 	padding: 3px 5px;
 	color: #D80000;
 	font-size: 10px;
+	font-size: 3.125vw;
 	line-height: 1.2;
 }
 
@@ -443,6 +454,7 @@ table.tblBDTN tr:first-child td{
 	margin: 0 3%;
 	color: #000;
 	font-size: 12px;
+font-size: 3.75vw;
 	text-align: center;
 	text-decoration: none;
 	border: 1px solid #C8C8C8;
@@ -620,13 +632,13 @@ margin: -5%;
 .txtLBlue1{color: #127CCD !important;}
 .txtLGrey1{color: #878787 !important;}
 
-.fz10{font-size:10px !important;}
-.fz11{font-size:11px !important;}
-.fz12{font-size:12px !important;}
-.fz13{font-size:13px !important;}
-.fz14{font-size:14px !important;}
-.fz15{font-size:15px !important;}
-.fz16{font-size:16px !important;}
+.fz10{font-size:10px;font-size: 3.125vw !important;}
+.fz11{font-size:11px;font-size: 3.4375vw !important;}
+.fz12{font-size:12px;font-size: 3.75vw !important;}
+.fz13{font-size:13px;font-size: 4.0625vw !important;}
+.fz14{font-size:14px;font-size: 4.375vw !important;}
+.fz15{font-size:15px;font-size: 4.6875vw !important;}
+.fz16{font-size:16px;font-size: 5vw !important;}
 .fz17{font-size:17px !important;}
 .fz18{font-size:18px !important;}
 .fz19{font-size:19px !important;}
