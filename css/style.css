@@ -2,16 +2,21 @@ body{
 }
 header{
 	text-align: center;
-	position: relative;
-	padding: 4%;
+	padding-top: 15.625%;
 	border-bottom: 6px solid #127CCD;
+	position: relative;
 }
 header h1{
+	width: 100%;
 	font-size: 16px;
 	font-size: 5vw;
+	font-weight: bold;
 	color: #00A184;
+	position: absolute;
+	top: 28%;
 }
 
+header .logo1 img{width: 66.875%;}
 header .logo{
 	position: absolute;
 	right: 3%;
@@ -40,7 +45,8 @@ header .menu img{
 	font-size: 10px;
 	font-size: 3.125vw;
 	position: relative;
-    padding: 1% 2%;
+    padding: 0.63% 3.125%;
+	color: #127BCC;
 }
 .ttlArea .ttl{
 	float: left;
@@ -138,7 +144,7 @@ select{
 
 
 .content{
-	padding: 0% 3% 90px;
+	padding: 0% 3.125% 90px;
 	background: #F9F9F9;
 	/*opacity: 0.5;*/
 }
@@ -149,7 +155,7 @@ select{
 }
 
 .content section{
-	padding-top: 6%;
+	padding-top: 6.3334%;
 }
 
 
@@ -188,6 +194,7 @@ select{
 		height: 40px;
 		font-size: 14px;
 		font-size: 4.375vw;
+		font-weight: bold;
 		line-height: 40px;
 	}
 	.btn1.is_clr1{
@@ -371,7 +378,7 @@ table.tblBDTN tr:first-child td{
 	border: 1px solid #DDD;
 	border-radius: 5px;
 }
-	.formTbl1 input[readonly]{
+	.formTbl1 input[disabled]{
 		background-color: #EBEEF1;
 		border: none;
 	}
@@ -452,7 +459,7 @@ table.tblBDTN tr:first-child td{
 	background: #FFF;
 	padding: 2%;
 	margin: 0 3%;
-	color: #000;
+	color: #000 !important;
 	font-size: 12px;
 font-size: 3.75vw;
 	text-align: center;
@@ -517,6 +524,7 @@ font-size: 3.75vw;
 	margin-right:auto;
 	margin-bottom: 3%;
 	letter-spacing: -0.4em;
+	line-height: 1.2;
 	border: 1px solid #DDD;
 	border-radius: 8px;
 	overflow: hidden;

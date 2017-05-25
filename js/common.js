@@ -71,7 +71,7 @@ $(".slctClr").change(function(){
 var sclNum = 0;
 $(window).scroll(function(){
 	sclNum = $(window).scrollTop();
-	if(sclNum > 300){	$(".toTop").fadeIn("fast");}
+	if(sclNum > 5){	$(".toTop").fadeIn("fast");}
 	else{	$(".toTop").fadeOut("fast");}
 });
 //clickによるスクロール
