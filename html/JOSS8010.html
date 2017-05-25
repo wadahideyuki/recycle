@@ -9,7 +9,15 @@
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/common.js"></script>
-
+	<style>
+/*
+		html{
+			background:url(../tyosei/JOSS8010_1.png) 0 0 no-repeat;
+			background-size: 100% auto;
+		}
+		body{opacity: 0.5;}
+*/
+	</style>
 </head>
 
 <body>
@@ -29,12 +37,12 @@
 
 			<div class="whiteBox1">
 				<div class="tabBox1">
-					<ul class="tabPart col2 W100P">
+					<ul class="tabPart col2">
 						<li class="tabNo1 show">車両関連情報</li>
 						<li class="tabNo2">移動報告(ＥＬＶのみ)<br>実施事業者関連情報</li>
 					</ul>
 
-					<ul class="tabConts PT10">
+					<ul class="tabConts">
 						<li class="tabContNo1 show">
 							<ul class="rdoList1">
 								<li class="listItem1"><input type="radio" name="JOSS8010_radSyryjyh" value="SydiNo" id="radio1"><label class="rdo1" for="radio1"><span>車台番号</span></label></li>
@@ -50,7 +58,7 @@
 											<tr>
 												<th>車台番号</th>
 												<td>
-													<input type="text" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff" placeholder="例）0000000">
+													<input type="text" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）0000000">
 													<small class="note">[半角数字]</small>
 												</td>
 											</tr>
@@ -63,7 +71,7 @@
 											<tr>
 												<th rowspan="2">職権打刻番号</th>
 												<td class="colNo2">
-													<select name="JOSS8010_selSykndkkNo1" class="slctClr unselect">
+													<select name="JOSS8010_selSykndkkNo1" class="slctClr inputType1 unselect">
 														<option value="" selected="selected">選択</option>
 														<option value="国">国</option>
 														<option value="札">札</option>
@@ -122,16 +130,16 @@
 													</select>
 												</td>
 												<td class="colNo2_2">
-													<input type="text" name="JOSS8010_txtSykndkkNo2" value="" disabled>
+													<input type="text" name="JOSS8010_txtSykndkkNo2" value="" disabled class="inputType1">
 												</td>
 											</tr>
 											<tr>
 												<td class="colNo2">
-													<input type="text" name="JOSS8010_txtSykndkkNo3" maxlength="7" value="" class="imeActive" placeholder="例）0000000">
+													<input type="text" name="JOSS8010_txtSykndkkNo3" maxlength="7" value="" class="imeActive inputType1" placeholder="例）0000000">
 													<small class="note">[半角数字]</small>
 												</td>
 												<td class="colNo2_2">
-													<input type="text" name="JOSS8010_txtSykndkkNo4" value="" disabled>
+													<input type="text" name="JOSS8010_txtSykndkkNo4" value="" class="inputType1" disabled>
 												</td>
 											</tr>
 										</tbody>
@@ -143,7 +151,7 @@
 											<tr>
 												<th>移動報告番号</th>
 												<td>
-													<input type="text" name="JOSS8010_txtIdhkkNo" maxlength="12" size="12" class="imeOff" placeholder="例）000000000000">
+													<input type="text" name="JOSS8010_txtIdhkkNo" maxlength="12" size="12" class="imeOff inputType1" placeholder="例）000000000000">
 													<small class="note">[半角数字]</small>
 												</td>
 											</tr>
@@ -156,7 +164,7 @@
 											<tr>
 												<th rowspan="2">登録番号・車両番号</th>
 												<td class="colNo3">
-													<select name="JOSS8010_selSkyk" class="slctClr unselect">
+													<select name="JOSS8010_selSkyk" class="slctClr inputType1 unselect">
 														<option value="" selected="selected">選択</option>
 														<option value="札">札</option>
 														<option value="札幌">札幌</option>
@@ -330,12 +338,12 @@
 													</select>
 												</td>
 												<td class="colNo3_2">
-													<input type="text" name="JOSS8010_txtBnriNo" maxlength="3" size="6" value="" placeholder="例）000">
+													<input type="text" name="JOSS8010_txtBnriNo" maxlength="3" size="6" value="" placeholder="例）000" class="inputType1">
 												</td>
 											</tr>
 											<tr>
 												<td class="colNo3">
-													<select name="JOSS8010_selKnmj" class="slctClr unselect">
+													<select name="JOSS8010_selKnmj" class="slctClr inputType1 unselect">
 														<option value="">選択</option>
 														<option value="あ">あ</option>
 														<option value="い">い</option>
@@ -390,7 +398,7 @@
 													</select>
 												</td>
 												<td class="colNo3_2">
-													<input type="text" name="JOSS8010_txtItrnNo" maxlength="4" size="8" value="" class="imeActive" placeholder="例）0000">
+													<input type="text" name="JOSS8010_txtItrnNo" maxlength="4" size="8" value="" class="imeActive inputType1" placeholder="例）0000">
 													<small class="note">[半角数字]</small>
 												</td>
 											</tr>
@@ -406,12 +414,12 @@
 									<table>
 										<tbody>
 											<tr>
-												<th>
+												<th class="withReq">
 													<span class="reqTxt">事務所コード</span>
 													<em class="require">必須</em>
 												</th>
 												<td>
-													<input type="text" name="JOSS8010_txtZgyusyCd" maxlength="12" size="12" value="" class="imeOff" placeholder="例）名古屋支局">
+													<input type="text" name="JOSS8010_txtZgyusyCd" maxlength="12" size="12" value="" class="imeOff inputType1" placeholder="例）名古屋支局">
 												</td>
 											</tr>
 										</tbody>
@@ -427,7 +435,7 @@
 													<label class="chk1" for="check1">引取報告年月</label>
 												</th>
 												<td>
-													<select name="JOSS8010_selHktrYear">
+													<select name="JOSS8010_selHktrYear" class="inputType1">
 														<option value="2012">2012</option>
 														<option value="2013">2013</option>
 														<option value="2014">2014</option>
@@ -438,7 +446,7 @@
 													<span>年</span>
 												</td>
 												<td>
-													<select name="JOSS8010_selHktrMon">
+													<select name="JOSS8010_selHktrMon" class="inputType1">
 														<option value="1">1</option>
 														<option value="2">2</option>
 														<option value="3">3</option>
@@ -461,7 +469,7 @@
 													<label class="chk1" for="check2">引渡報告年月</label>
 												</th>
 												<td>
-													<select name="JOSS8010_selHkwtYear">
+													<select name="JOSS8010_selHkwtYear" class="inputType1">
 														<option value="2012">2012</option>
 														<option value="2013">2013</option>
 														<option value="2014">2014</option>
@@ -472,7 +480,7 @@
 													<span>年</span>
 												</td>
 												<td>
-													<select name="JOSS8010_selHkwtMon" >
+													<select name="JOSS8010_selHkwtMon" class="inputType1">
 														<option value="1">1</option>
 														<option value="2">2</option>
 														<option value="3">3</option>
@@ -492,13 +500,13 @@
 											<tr>
 												<th>車名</th>
 												<td colspan="2">
-													<input type="text" name="JOSS8010_txtSymi" maxlength="28" size="56" value="" class="imeActive" placeholder="例）テスト車名">
+													<input type="text" name="JOSS8010_txtSymi" maxlength="28" size="56" value="" class="imeActive inputType1" placeholder="例）テスト車名">
 												</td>
 											</tr>
 											<tr>
 												<th>型式</th>
 												<td colspan="2">
-													<input type="text" name="JOSS8010_txtKtsk" maxlength="17" size="17" value="" class="imeOff" placeholder="例）00000000000000000">
+													<input type="text" name="JOSS8010_txtKtsk" maxlength="17" size="17" value="" class="imeOff inputType1" placeholder="例）00000000000000000">
 													<small class="note">[半角数字]</small>
 												</td>
 											</tr>
@@ -513,7 +521,7 @@
 		</section>
 
 
-		<section>
+		<section class="btnSec">
 			<div class="taC">
 				<a class="btn1 is_type1 is_clr2" href="JOSS8010.html">検索</a>
 			</div>

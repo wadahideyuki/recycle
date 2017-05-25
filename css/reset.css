@@ -68,6 +68,7 @@ input,textarea,select{
 /* ページ共通
 ---------------------------------------------------- */
 html{
+	background-color: #f9f9f9;
 	color:#333333;
 }
 

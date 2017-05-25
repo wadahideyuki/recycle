@@ -39,6 +39,7 @@ $(".rdoList1 input:radio").click(function(){
 
 	//コンテンツの切替
 	$(".rdoList1Cont > li").hide();
+	$(".rdoList1Cont").show();
 	$(".rdoList1Cont > li." + No).show();
 });//.rdoList1 input:radio ClkEnd
 /*----- /.rdoList1 -----*/

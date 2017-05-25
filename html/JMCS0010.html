@@ -8,11 +8,13 @@
 	<link href="../css/reset.css" rel="stylesheet" type="text/css">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<style>
+/*
 		html{
-			background:url(../bg.jpg) 0 0 no-repeat;
+			background:url(../tyosei/JMCS0010.png) 0 0 no-repeat;
 			background-size: 100% auto;
 		}
 		body{opacity: 0.5;}
+*/
 	</style>
 </head>
 
@@ -28,20 +30,24 @@
 	<div class="content">
 		<section>
 			<h2 class="ttlBlue">ログイン</h2>
-			<table class="tblLogin">
-				<tr class="">
-					<th class="PB0">ユーザーＩＤ</th>
-					<td class="PB0"><input maxlength="40" name="JMCS0010_txtId" value="" type="text" placeholder="ユーザーIDを入力"></td>
-				</tr>
-				<tr>
-					<th class="PT5"> パスワード</th>
-					<td class="PT5">
-						<input type="password" maxlength="40" style="ime-mode: disable" name="JMCS0010_txtPwd" value="" placeholder="パスワードを入力"  autocomplete="OFF">
-					</td>
-				</tr>
-		</table>
+			<div class="whiteBox1">
+				<table class="tblLogin MB0">
+					<tr class="">
+						<th>ユーザーＩＤ</th>
+						<td><input maxlength="40" name="JMCS0010_txtId" value="" type="text" placeholder="ユーザーIDを入力" class="inputType1"></td>
+					</tr>
+					<tr>
+						<th> パスワード</th>
+						<td>
+							<input type="password" maxlength="40" style="ime-mode: disable" name="JMCS0010_txtPwd" value="" placeholder="パスワードを入力"  autocomplete="OFF" class="inputType1">
+						</td>
+					</tr>
+				</table>
+			</div>
 		</section>
-		<section>
+
+
+		<section class="btnSec">
 			<div class="taC">
 				<a class="btn1 is_type1 is_clr2" href="JMGS1000.html">ログイン</a>
 			</div>

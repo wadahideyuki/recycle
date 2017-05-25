@@ -9,13 +9,13 @@ header{
 header h1{
 	width: 100%;
 	font-size: 16px;
-	font-size: 5vw;
+		font-size: 5vw;
 	font-weight: bold;
 	color: #00A184;
 	position: absolute;
-	top: 28%;
+	top: 34%;
 }
-
+header .logo1{top: 28%;}
 header .logo1 img{width: 66.875%;}
 header .logo{
 	position: absolute;
@@ -43,9 +43,9 @@ header .menu img{
 .ttlArea{
 	background: #CBE0F0;
 	font-size: 10px;
-	font-size: 3.125vw;
+		font-size: 3.125vw;
 	position: relative;
-    padding: 0.63% 3.125%;
+    padding: 1.25% 3.125%;
 	color: #127BCC;
 }
 .ttlArea .ttl{
@@ -58,8 +58,7 @@ header .menu img{
 
 .toTop{
 	display: none;
-	width: 40px;
-	height: 40px;
+	width: 12.5%;
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
@@ -74,31 +73,33 @@ input[type="password"]{
 	-moz-appearance: none;
 	appearance: none;
 }
+.inputType1{
+	width: 100%;
+	height: 30px;
+		height: 9.375vw;
+	padding: 0 5px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
 input[type="radio"]{display: none;}
 .rdo1{position: relative;}
-	.rdo1:before,
-	input[type="radio"]:checked + .rdo1:after{
+	.rdo1:before{
 		content: "";
 		display: inline-block;
+		background:url(../images/rdo1.png) 0 0 no-repeat;
+		background-size: contain;
+		width: 18px;
+			width: 6.25vw;
+		height: 18px;
+			height: 6.25vw;
 		margin: auto;
+		margin-right: 9px;
 		vertical-align: middle;
-		border-radius: 50%;
+		box-sizing: border-box;
 	}
-		.rdo1:before{
-			background-color: #fff;
-			width: 18px;
-			height: 18px;
-			margin-right: 9px;
-			border: 1px solid #C8C8C8;
-		}
-		.rdo1:after{
-			background-color: #999;
-			width: 8px;
-			height: 8px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 6px;
+		input[type="radio"]:checked + .rdo1:before{
+			background-image: url(../images/rdo1_on.png);
 		}
 input[type="checkbox"]{display: none;}
 .chk1{
@@ -109,9 +110,11 @@ input[type="checkbox"]{display: none;}
 		content: "";
 		display: inline-block;
 		background:url(../images/chk1.png) 0 0 no-repeat;
-		background-size: 30px 30px;
+		background-size: contain;
 		width: 30px;
+			width: 9.375vw;
 		height: 30px;
+			height: 9.375vw;
 		margin-right: 5px;
 		vertical-align: middle;
 	}
@@ -125,21 +128,15 @@ select{
 	appearance: none;
 	background:url(../images/slct_arw.png) 97% center no-repeat #fff;
 	background-size: 8px 7px;
-	padding: 2%;
-	border-radius: 5px;
-	border: 1px solid #DDD;
 }
 
 .require{
 	display: inline-block;
 	background-color: #D80000;
-	width: 32px;
-	height: 20px;
 	color: #fff;
 	font-size: 9px;
-	font-size: 2.9vw;
+		font-size: 2.9vw;
 	text-align: center;
-	line-height: 20px;
 }
 
 
@@ -153,29 +150,29 @@ select{
 	margin-bottom: 2%;
 	width: 100%;
 }
+	.content table.tblMB8{margin-bottom: 2.6667%;}
 
-.content section{
-	padding-top: 6.3334%;
-}
+.content section{padding-top: 6.3334%;}
+	.content section.btnSec{padding-top: 13%;}
+	.content section.secPT10{padding-top: 3.3334%;}
 
 
 /* タイトル */
 .ttlBlue{
 	background: #CBE0F0;
-    border-left: 6px solid #127CCD;
+	border-left: 6px solid #127CCD;
 	font-size:14px;
-	font-size: 4.375vw;
-    font-weight: bold;
-    padding: 3% 3% 3% 5%;
-    margin:0 0 3% 0;
+		font-size: 4.375vw;
+	font-weight: bold;
+	padding: 3.8667% 3% 3.8667% 5%;
+	margin:0 0 3% 0;
 }
 .ttlBeige{
 	background: #CECEBF;
 	margin-bottom: 2%;
-	padding: 3% 3% 3% 5%;
+	padding: 2.2% 3% 2.2% 5%;
 	font-size:14px;
-	font-size: 4.375vw;
-	font-weight: bold;
+		font-size: 4.375vw;
 	border-left: 6px solid #A2A284;
 }
 
@@ -189,15 +186,14 @@ select{
 	vertical-align: middle;
 	border-radius: 8px;
 }
-	.btn1.is_type1{
-		width: 120px;
-		height: 40px;
+	.btn1.is_type1{/*大きさ*/
+		width: 40%;
+		padding:3.8667% 0;
 		font-size: 14px;
-		font-size: 4.375vw;
+			font-size: 4.375vw;
 		font-weight: bold;
-		line-height: 40px;
 	}
-	.btn1.is_clr1{
+	.btn1.is_clr1{/*色*/
 		background-color: #aaa;
 		color: #fff;
 	}
@@ -207,22 +203,24 @@ select{
 	}
 
 .btnList{
-	background:#fff url(../images/arrow_r.png) no-repeat 98% center;
+	background:#fff url(../images/arrow_r.png) no-repeat 96% center;
 	background-size: 7px 13px;
 	display: block;
-	border: 2px solid #127CCD;
-	padding: 3% 5% 3% 4%;
-	margin: 3%;
+	margin: 3.3334%;
+	padding: 6.6667% 5% 6.6667% 4%;
 	color: #127CCD;
 	text-decoration: none;
-	border-radius: 5px;
 	font-size: 12px;
-font-size: 3.75vw;
+		font-size: 3.75vw;
+	border-radius: 5px;
+	border: 2px solid #127CCD;
+	box-sizing: border-box;
 }
 .btnList strong{
 	font-size:14px;
-	font-size: 4.375vw;
+		font-size: 4.375vw;
 	font-weight: bold;
+	line-height: 1.3;
 	display: block;
 }
 
@@ -237,9 +235,9 @@ font-size: 3.75vw;
 
 /* テーブル */
 th,td{
-	padding: 2.3%;
+	padding: 2.3% 2.3% 2.3% 3.3%;
 	font-size: 12px;
-font-size: 3.75vw;
+		font-size: 3.75vw;
 	border: 1px solid #DDD;
 	background: #FFF;
 }
@@ -258,6 +256,14 @@ font-size: 3.75vw;
 .tblBlue.is_type2 th{/*thの幅半分*/
 	width: 23.5%;
 }
+	.tblBlue.is_type2 th[class^="type2_W"]{
+		padding-right: 0;
+		padding-left:2.3%;
+		font-size: 11px;
+			font-size: 3.4375vw;
+	}
+	.tblBlue.is_type2 th.type2_W1{width: 30%;}
+	.tblBlue.is_type2 th.type2_W2{width: 17%;}
 .tblBlue.is_type3{/*cellの左右に線無し,tableの左右に線有り*/
 	border-left: 1px solid #DDD;
 	border-right: 1px solid #DDD;
@@ -310,46 +316,39 @@ font-size: 3.75vw;
 	border-radius: 0 3px 3px 0;
 	border: none;
 }
+
 .tblLogin{
-	border: 1px solid #DDD;
+}
+.tblLogin th{
+	width: 39.2858%;
+	padding: 0;
+	border: none;
 }
 .tblLogin td{
 	border: none;
-	padding: 4%;
-	width: 58%;
+	padding: 0;
 	text-align: left;
-
 }
-.tblLogin input{
-	width: 95%;
-	border-radius: 5px;
-	border: 1px solid #DDD;
-	padding: 2%;
-}
-.tblLogin th{
-	width: 35%;
-	border: none;
-}
+.tblLogin tr + tr th,
+.tblLogin tr + tr td{padding-top: 3.2%;}
 
 table.tblBDTN tr:first-child th,
-table.tblBDTN tr:first-child td{
-	border-top: none;
-}
+table.tblBDTN tr:first-child td{border-top: none;}
 
-.formTbl1{
-}
+.formTbl1{}
 .formTbl1 *{box-sizing: border-box;}
 .formTbl1 table{margin: 0;}
 .formTbl1 td,
 .formTbl1 th{
-	padding: 0 0 10px;
+	padding: 0 0 3.2%;
 	vertical-align: top;
 	border: none;
 }
 .formTbl1 th{
 	width: 40%;
-	padding-top: 6px;
+	padding-top: 3.2%;
 }
+	.formTbl1 th.withReq{padding-top: 3.5715%;}
 .formTbl1 td{
 }
 	.formTbl1 td.colNo2{
@@ -369,25 +368,17 @@ table.tblBDTN tr:first-child td{
 		padding-left: 5px;
 	}
 .formTbl1 input{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	width: 100%;
-	height: 30px;
-	padding: 0 5px;
-	border: 1px solid #DDD;
-	border-radius: 5px;
 }
 	.formTbl1 input[disabled]{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 		background-color: #EBEEF1;
 		border: none;
 	}
 .formTbl1 select{
 	background:url(../images/slct_arw2.png) 92% center no-repeat #fff;
 	background-size: 8px 7px;
-	width: 100%;
-	height: 30px;
-	padding: 0 5px;
 }
 .formTbl1 select.unselect{
 	color: #bbb;
@@ -404,26 +395,27 @@ table.tblBDTN tr:first-child td{
 }
 .formTbl1 .note{
 	display: block;
-	margin-top: 3px;
+	margin-top: 5px;
 	color: #D80000;
 	font-size: 10px;
-	font-size: 3.125vw;
+		font-size: 3.125vw;
 }
 .formTbl1 .reqTxt{
 	display: inline-block;
-	line-height: 19px;
+	line-height: 0.7;
 	vertical-align: top;
 }
 .formTbl1 .require{
-	margin-top: -1px;
+	margin-top: -5%;
+	padding:3.973% 6.026%;
 	vertical-align: top;
 }
 .formTbl1 .txt1{
 	background-color: #EBEEF1;
-	padding: 3px 5px;
+	padding: 1.0715% 1.7858%;
 	color: #D80000;
 	font-size: 10px;
-	font-size: 3.125vw;
+		font-size: 3.125vw;
 	line-height: 1.2;
 }
 
@@ -436,32 +428,34 @@ table.tblBDTN tr:first-child td{
 }
 .rdoList1 > li{}
 	.rdoList1 > li.show{background-color:#CBE0F0;}
-	.rdoList1 > li + li{border-top: 1px solid #ddd;}
 .rdoList1 label{
 	display: block;
-	padding: 2% 2% 2% 6px;
+		height: 30px;
+	height: 9.375vw;
+	padding: 1.8% 2% 0% 2.16%;
+	box-sizing: border-box;
 }
-	.rdoList1 label:after{left: 12px;}
+	.rdoList1 > li + li label{border-top: 1px solid #ddd;}
 .rdoList1 label span{
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.rdoList1Cont{margin-top: 6.25%;}
+.rdoList1Cont{
+	display: none;
+	margin-top: 6.25%;
+}
 .rdoList1Cont > li{display: none;}
-
-
-
 
 
 .detailOpen{
 	display: block;
 	background: #FFF;
-	padding: 2%;
+	padding: 2.3%;
 	margin: 0 3%;
 	color: #000 !important;
 	font-size: 12px;
-font-size: 3.75vw;
+		font-size: 3.75vw;
 	text-align: center;
 	text-decoration: none;
 	border: 1px solid #C8C8C8;
@@ -488,6 +482,7 @@ font-size: 3.75vw;
 	vertical-align: middle;
 }
 .pagerBox > li.celGaito{
+	width: 23.3334%;
 }
 .pagerBox > li.celPage{
 	text-align: center;
@@ -500,18 +495,26 @@ font-size: 3.75vw;
 	margin: 0 10px;
 }
 .pagerBox > li.celPage img{
-	width: 30px;
+	height: 100%;
+}
+.pagerBox > li.celPage a{
+	height: 30px;
+		height: 9.375vw;
 }
 	.pagerBox.pageFirst > li.celPage .pagePre,
 	.pagerBox.pageLast > li.celPage .pageNxt{opacity: 0.5;}
 .pagerBox > li.celKensu{
+	width: 23.3334%;
 	text-align: right;
 }
 .pagerBox > li.celKensu select{
-	background-position: 55px center;
-	width: 70px;
+	background-position: 90% center;
+	width: 100%;
 	height: 30px;
+		height: 9.375vw;
 	padding: 0px 5px;
+	border: 1px solid #c8c8c8;
+	border-radius: 5px;
 }
 
 
@@ -519,23 +522,27 @@ font-size: 3.75vw;
 .tabBox1{}
 .tabBox1 .tabPart{
 	display: table;
-	width: 93%;
+	width: 100%;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom: 3%;
+	margin-bottom: 6.4286%;
 	letter-spacing: -0.4em;
 	line-height: 1.2;
-	border: 1px solid #DDD;
+	border: 1px solid #c8c8c8;
 	border-radius: 8px;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 .tabBox1 .tabPart > li{
 	display: table-cell;
-	padding: 2.3%;
+	padding:1.84% 2.7%;
 	letter-spacing: normal;
 	vertical-align: middle;
 	box-sizing: border-box;
 }
+	.tabBox1 .tabPart.is_type2 > li{
+		padding:2.62% 2.7%;
+	}
 	.tabBox1 .tabPart > li.show{background-color: #CBE0F0;}
 	.tabBox1 .tabPart.col2 > li{width: 50%;}
 	.tabBox1 .tabPart.col3 > li{width: 33.3333%;}
@@ -577,7 +584,7 @@ font-size: 3.75vw;
 .txtLogin{
 	position: absolute;
 	text-align: center;
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	bottom: 10px;
 	left: 0px;
@@ -585,8 +592,7 @@ font-size: 3.75vw;
 
 .iconArrowU{
 	text-align: center;
-	padding: 1% 0 0 0;
-	width: 9%;
+	width: 6.6667%;
 	margin: 0 auto;
 }
 
