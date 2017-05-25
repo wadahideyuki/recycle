@@ -1,6 +1,7 @@
 body{
 }
 header{
+	background-color: #fff;
 	text-align: center;
 	padding-top: 15.625%;
 	border-bottom: 6px solid #127CCD;
@@ -369,7 +370,7 @@ table.tblBDTN tr:first-child td{border-top: none;}
 	}
 .formTbl1 input{
 }
-	.formTbl1 input[disabled]{
+	.formTbl1 input.disabled{
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
@@ -502,7 +503,7 @@ table.tblBDTN tr:first-child td{border-top: none;}
 		height: 9.375vw;
 }
 	.pagerBox.pageFirst > li.celPage .pagePre,
-	.pagerBox.pageLast > li.celPage .pageNxt{opacity: 0.5;}
+	.pagerBox.pageLast > li.celPage .pageNxt{opacity: 0.3;}
 .pagerBox > li.celKensu{
 	width: 23.3334%;
 	text-align: right;
