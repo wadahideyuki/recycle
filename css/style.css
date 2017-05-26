@@ -69,7 +69,8 @@ header .menu img{
 
 /* フォーム */
 input[type="text"],
-input[type="password"]{
+input[type="password"],
+input[type="number"]{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
