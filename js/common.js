@@ -12,6 +12,14 @@ $(".acrdBox1 .acrdBtn").click(function(){
 });//.acrdBox1 .acrdBtn ClkEnd
 
 
+//ヘルプbtn
+$(".helpBox .helpBtn").click(function(){
+	var parents = $(this).parents(".helpBox");
+	parents.find(".helpPart").slideToggle();
+	parents.toggleClass("opn");
+	return false;
+});//.acrdBox1 .acrdBtn ClkEnd
+
 
 //tabの切替1
 $(".tabBox1 .tabPart > li").click(function(){

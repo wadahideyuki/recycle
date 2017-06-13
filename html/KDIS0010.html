@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ja"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="http://fani.wadakoubou.com/recycle/favicon.ico" />
+	<title>リサイクル料金検索</title>
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/common.js"></script>
+	<style>
+	</style>
+</head>
+
+<body>
+	<header class="color2">
+		<h1>リサイクル料金検索</h1>
+		<a href="#" class="logo"><img src="../images/logo.png" alt=""/></a>
+	</header>
+	<div class="ttlArea clearfix color2">
+		<span class="ttl">JOSS8012_M</span>
+		<span class="date">2017/04/06 15:32:45</span>
+	</div>
+
+	<div class="content">
+		<section>
+			<h2 class="ttlOrange">お手持ちの車検証をご覧になり、以下の情報を入力してください。</h2>
+			<p class="fz12 MB2P">(車検証の見方は<a href="">こちら</a>)</p>
+
+			<div class="whiteBox1">
+				<div class="spaceBox">
+					<div class="helpBox">
+						<h3 class="ttlType1">① 自動車の種別</h3>
+						<a class="helpBtn" href="#">
+							<img class="btnOpn" src="../images/btn_help.png" width="100%" alt=""/>
+							<img class="btnCls" src="../images/btn_help_cls.png" width="100%" alt=""/>
+						</a>
+						<div class="helpPart">
+							<dl>
+								<dt class="helpTtl">入力方法</dt>
+								<dd class="helpTxt">自動車検査証の「自動車の種別」欄が軽自動車の場合は「軽自動車」を選択してください。<br>
+								それ以外の場合は、「登録自動車」を選択してください。</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="tabBox1 color2 noCont">
+						<ul class="tabPart col2 is_type2">
+							<li class="tabNo1 show">登録自動車</li>
+							<li class="tabNo2">軽自動車</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="spaceBox is_type2 space3">
+					<div class="helpBox">
+						<h3 class="ttlType1">② 車台番号</h3>
+						<a class="helpBtn" href="#">
+							<img class="btnOpn" src="../images/btn_help.png" width="100%" alt=""/>
+							<img class="btnCls" src="../images/btn_help_cls.png" width="100%" alt=""/>
+						</a>
+						<div class="helpPart">
+							<dl>
+								<dt class="helpTtl">入力方法</dt>
+								<dd class="helpTxt">自動車車検査証の「車台番号」欄が全て英数字の場合は、「英数字のみの場合」を選択し下４桁を入力してください。<br>
+								「車台番号」欄に漢字がある場合は、「漢字がある場合」を選択し漢字を含む全てを選択・入力してください。</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="tabBox1 color2">
+						<ul class="tabPart col2 is_type2">
+							<li class="tabNo1 show">英数字のみの場合</li>
+							<li class="tabNo2">漢字がある場合</li>
+						</ul>
+
+						<ul class="tabConts">
+							<li class="tabContNo1 show">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th>車台番号</th>
+													<td>
+														<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
+														<small class="note">[半角英数] [ハイフンを含む場合、これらも含めて入力してください]</small>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+								
+							</li><!--/.tabContNo1-->
+
+							<li class="tabContNo2">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th rowspan="2">職権打刻番号</th>
+													<td>
+														<select name="JOSS8010_selSykndkkNo1" class="slctClr inputType1 unselect">
+															<option value="" selected="selected">選択</option>
+															<option value="国">国</option>
+															<option value="札">札</option>
+															<option value="函">函</option>
+															<option value="室">室</option>
+															<option value="帯">帯</option>
+															<option value="釧">釧</option>
+															<option value="北">北</option>
+															<option value="旭">旭</option>
+															<option value="宮">宮</option>
+															<option value="島">島</option>
+															<option value="手">手</option>
+															<option value="青">青</option>
+															<option value="新">新</option>
+															<option value="野">野</option>
+															<option value="形">形</option>
+															<option value="秋">秋</option>
+															<option value="東">東</option>
+															<option value="神">神</option>
+															<option value="千">千</option>
+															<option value="玉">玉</option>
+															<option value="茨">茨</option>
+															<option value="群">群</option>
+															<option value="栃">栃</option>
+															<option value="山">山</option>
+															<option value="愛">愛</option>
+															<option value="静">静</option>
+															<option value="岐">岐</option>
+															<option value="三">三</option>
+															<option value="井">井</option>
+															<option value="石">石</option>
+															<option value="富">富</option>
+															<option value="大">大</option>
+															<option value="京">京</option>
+															<option value="兵">兵</option>
+															<option value="賀">賀</option>
+															<option value="奈">奈</option>
+															<option value="歌">歌</option>
+															<option value="広">広</option>
+															<option value="取">取</option>
+															<option value="根">根</option>
+															<option value="岡">岡</option>
+															<option value="口">口</option>
+															<option value="香">香</option>
+															<option value="徳">徳</option>
+															<option value="媛">媛</option>
+															<option value="知">知</option>
+															<option value="福">福</option>
+															<option value="佐">佐</option>
+															<option value="長">長</option>
+															<option value="本">本</option>
+															<option value="分">分</option>
+															<option value="崎">崎</option>
+															<option value="児">児</option>
+															<option value="沖">沖</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="number" name="JOSS8010_txtSykndkkNo3" maxlength="7" value="" class="imeActive inputType1" placeholder="例）０００００００">
+														<small class="note">[7桁以下の全角数字]</small>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo2-->
+						</ul><!--/.tabConts-->
+					</div>
+				</div>
+
+				<div class="spaceBox is_type2 space3">
+					<div class="helpBox">
+						<h3 class="ttlType1">③自動車登録番号又は車両番号</h3>
+						<a class="helpBtn" href="#">
+							<img class="btnOpn" src="../images/btn_help.png" width="100%" alt=""/>
+							<img class="btnCls" src="../images/btn_help_cls.png" width="100%" alt=""/>
+						</a>
+						<div class="helpPart">
+							<dl>
+								<dt class="helpTtl">入力方法</dt>
+								<dd class="helpTxt">自動車車検査証の「自動車登録番号又は車両番号」欄の内容を選択・入力してください。</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="tabBox1 color2">
+						<ul class="tabPart col2 is_type2">
+							<li class="tabNo1 show">登録番号/車両番号</li>
+							<li class="tabNo2">リサイクル券番号</li>
+						</ul>
+
+						<ul class="tabConts">
+							<li class="tabContNo1 show">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th>支局名</th>
+													<td class="colNo3">
+														<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
+													</td>
+													<td class="colNo3_2">
+														<small class="note">[半角英数]</small>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo1-->
+
+							<li class="tabContNo2">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th>リサイクル券番号</th>
+													<td>
+														<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
+														<small class="note">[半角英数]</small>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo2-->
+						</ul><!--/.tabConts-->
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section>
+			<h2 class="ttlOrange">ご利用目的を選択してください。<br>
+			<span>廃車時に必要な料金を知りたい方は、エアバック類とフロン類(エアコン)の装備を選択</span></h2>
+
+			<div class="tabBox1 color2">
+				<ul class="tabPart col2 is_type2">
+					<li class="tabNo1 show">リサイクル料金の預託状況</li>
+					<li class="tabNo2">廃車時に必要なリサイクル料金</li>
+				</ul>
+
+				<ul class="tabConts">
+					<li class="tabContNo1 show">
+						<div class="acrdBox1 opn">
+							<h3 class="ttlBeige acrdBtn">取引工程</h3>
+							<div class="acrdPart" style="display: block;">
+								
+							</div>
+						</div>
+					</li><!--/.tabContNo1-->
+
+					<li class="tabContNo2">
+						<div class="acrdBox1 opn">
+							<h3 class="ttlBeige acrdBtn">フロン類</h3>
+							<div class="acrdPart" style="display: block;">
+								
+							</div>
+						</div>
+					</li><!--/.tabContNo2-->
+				</ul><!--/.tabConts-->
+			</div><!--/.tabBox1-->
+		</section>
+
+		<section>
+			<h2 class="ttlOrange">入力内容をもう一度確認して、間違いがなければ、「検索」ボタンを押してください。</h2>
+
+		</section>
+
+		<section>
+			<div class="taC">
+				<a class="btn1 is_type1 is_clr2" href="JOSS8010.html">検索</a>
+			</div>
+		</section>
+
+
+		<a class="toTop" href="#"><img src="../images/totop.png" alt=""/></a>
+	</div><!--/.content-->
+</body>
+</html>

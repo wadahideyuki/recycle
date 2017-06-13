@@ -60,7 +60,7 @@
 												<th>車台番号</th>
 												<td>
 													<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
-													<small class="note">[半角数字]</small>
+													<small class="note">[半角英数字42桁以内(’-’ 可)]</small>
 												</td>
 											</tr>
 										</tbody>
@@ -71,7 +71,7 @@
 										<tbody>
 											<tr>
 												<th rowspan="2">職権打刻番号</th>
-												<td class="colNo2">
+												<td>
 													<select name="JOSS8010_selSykndkkNo1" class="slctClr inputType1 unselect">
 														<option value="" selected="selected">選択</option>
 														<option value="国">国</option>
@@ -130,17 +130,11 @@
 														<option value="沖">沖</option>
 													</select>
 												</td>
-												<td class="colNo2_2">
-													<input type="text" name="JOSS8010_txtSykndkkNo2" value="" class="inputType1 disabled" disabled>
-												</td>
 											</tr>
 											<tr>
-												<td class="colNo2">
+												<td>
 													<input type="number" name="JOSS8010_txtSykndkkNo3" maxlength="7" value="" class="imeActive inputType1" placeholder="例）０００００００">
-													<small class="note">[半角数字]</small>
-												</td>
-												<td class="colNo2_2">
-													<input type="text" name="JOSS8010_txtSykndkkNo4" value="" class="inputType1 disabled" disabled>
+													<small class="note">[7桁以下の全角数字]</small>
 												</td>
 											</tr>
 										</tbody>
@@ -163,7 +157,7 @@
 									<table>
 										<tbody>
 											<tr>
-												<th rowspan="2">登録番号・車両番号</th>
+												<th>分類番号</th>
 												<td class="colNo3">
 													<select name="JOSS8010_selSkyk" class="slctClr inputType1 unselect">
 														<option value="" selected="selected">選択</option>
@@ -340,9 +334,11 @@
 												</td>
 												<td class="colNo3_2">
 													<input type="number" name="JOSS8010_txtBnriNo" maxlength="3" size="6" value="" placeholder="例）０００" class="inputType1">
+													<small class="note">[全角数字3桁]</small>
 												</td>
 											</tr>
 											<tr>
+												<th>一連指定番号</th>
 												<td class="colNo3">
 													<select name="JOSS8010_selKnmj" class="slctClr inputType1 unselect">
 														<option value="">選択</option>
@@ -400,7 +396,7 @@
 												</td>
 												<td class="colNo3_2">
 													<input type="number" name="JOSS8010_txtItrnNo" maxlength="4" size="8" value="" class="imeActive inputType1" placeholder="例）００００">
-													<small class="note">[半角数字]</small>
+													<small class="note">[全角数字4桁]</small>
 												</td>
 											</tr>
 										</tbody>
@@ -421,6 +417,7 @@
 												</th>
 												<td>
 													<input type="text" name="JOSS8010_txtZgyusyCd" maxlength="12" size="12" value="" class="imeOff inputType1" placeholder="例）000000000000">
+													<small class="note">[半角数字12桁]</small>
 												</td>
 											</tr>
 										</tbody>
@@ -466,7 +463,7 @@
 											</tr>
 											<tr class="chkSlctRow1">
 												<th>
-													<input type="checkbox" name="JOSS8010_chkHkwtHukkbjyh" value="on" id="check2" checked="checked">
+													<input type="checkbox" name="JOSS8010_chkHkwtHukkbjyh" value="on" id="check2">
 													<label class="chk1" for="check2">引渡報告年月</label>
 												</th>
 												<td>
@@ -508,7 +505,7 @@
 												<th>型式</th>
 												<td colspan="2">
 													<input type="number" name="JOSS8010_txtKtsk" maxlength="17" size="17" value="" class="imeOff inputType1" placeholder="例）CAR-Sample-000001">
-													<small class="note">[半角数字]</small>
+													<small class="note">[半角英数字17桁以内(’-’ 可)]</small>
 												</td>
 											</tr>
 										</tbody>

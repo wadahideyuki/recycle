@@ -7,6 +7,7 @@ header{
 	border-bottom: 6px solid #127CCD;
 	position: relative;
 }
+	header.color2{border-bottom-color: #E15A26;}
 header h1{
 	width: 100%;
 	font-size: 16px;
@@ -42,19 +43,19 @@ header .menu img{
 	height: auto;
 }
 .ttlArea{
-	background: #CBE0F0;
-	font-size: 10px;
-		font-size: 3.125vw;
-	position: relative;
-    padding: 1.25% 3.125%;
-	color: #127BCC;
+background: #CBE0F0;
+color: #127BCC;
+font-size: 10px;
+	font-size: 3.125vw;
+position: relative;
+	padding: 1.25% 3.125%;
 }
-.ttlArea .ttl{
-	float: left;
-}
-.ttlArea .date{
-	float: right;
-}
+	.ttlArea.color2{
+		background: #F4D9CF;
+		color: #E05926;
+	}
+.ttlArea .ttl{float: left;}
+.ttlArea .date{float: right;}
 
 
 .toTop{
@@ -169,6 +170,18 @@ select{
 	padding: 3.8667% 3% 3.8667% 5%;
 	margin:0 0 3% 0;
 }
+.ttlOrange{
+	background: #F4D9CF;
+	border-left: 6px solid #E15A26;
+	font-size:14px;
+		font-size: 4.375vw;
+	font-weight: bold;
+	padding: 3.8667% 3% 3.8667% 5%;
+	margin:0 0 3% 0;
+}
+	.ttlOrange > span{
+		font-weight: normal;
+	}
 .ttlBeige{
 	background: #CECEBF;
 	margin-bottom: 2%;
@@ -176,6 +189,13 @@ select{
 	font-size:14px;
 		font-size: 4.375vw;
 	border-left: 6px solid #A2A284;
+}
+
+.ttlType1{
+	margin-bottom: 2%;
+	font-size: 12px;
+	font-size: 3.75vw;
+	font-weight: bold;
 }
 
 
@@ -228,11 +248,53 @@ select{
 
 
 /* 箱 */
+.spaceBox{/*section内で並べる事で余白を取る*/}
+	.spaceBox.is_type1{/* width:300; */}
+		.spaceBox + .spaceBox.is_type1.space1{padding-top: 3.3334%;}
+		.spaceBox + .spaceBox.is_type1.space2{padding-top: 5%;}
+		.spaceBox + .spaceBox.is_type1.space3{padding-top: 6.6667%;}
+	.spaceBox.is_type2{/* width:280; */}
+		.spaceBox + .spaceBox.is_type2.space1{padding-top: 3.5715%;}
+		.spaceBox + .spaceBox.is_type2.space2{padding-top: 5.3572%;}
+		.spaceBox + .spaceBox.is_type2.space3{padding-top: 7.1429%;}
+
+
 .whiteBox1{
 	background-color: #fff;
 	padding:3%;
 	border: 1px solid #ddd;
 }
+.helpBox{
+	position: relative;
+}
+.helpBox .helpBtn{
+	width: 7.1428%;
+	margin-top: -1%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.helpBox .helpBtn img{}
+	.helpBox .helpBtn .btnCls{display: none;}
+		.helpBox.opn .helpBtn .btnOpn{display: none;}
+		.helpBox.opn .helpBtn .btnCls{display: block;}
+.helpBox .helpPart{
+	display: none;
+	padding-bottom: 3%;
+}
+.helpBox .helpPart > *{
+	padding: 3%;
+	border: 1px solid #ddd;
+}
+.helpBox .helpPart .helpTtl{
+	margin-bottom: 3%;
+	padding-bottom: 3%;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #C8C8C8;
+}
+
+
 
 
 /* テーブル */
@@ -535,6 +597,7 @@ table.tblBDTN tr:first-child td{border-top: none;}
 	overflow: hidden;
 	box-sizing: border-box;
 }
+	.tabBox1.noCont .tabPart{margin-bottom: 0;}
 .tabBox1 .tabPart > li{
 	display: table-cell;
 	padding:1.84% 2.7%;
@@ -546,6 +609,7 @@ table.tblBDTN tr:first-child td{border-top: none;}
 		padding:2.62% 2.7%;
 	}
 	.tabBox1 .tabPart > li.show{background-color: #CBE0F0;}
+		.tabBox1.color2 .tabPart > li.show{background-color: #F4D9CF;}
 	.tabBox1 .tabPart.col2 > li{width: 50%;}
 	.tabBox1 .tabPart.col3 > li{width: 33.3333%;}
 .tabBox1 .tabConts > li{display: none;}
@@ -598,33 +662,30 @@ table.tblBDTN tr:first-child td{border-top: none;}
 	margin: 0 auto;
 }
 
-.resultBoxWrap{
+.resultBoxWrap{padding:0 0 0 3.3%;}
+.content .resultBox{
+	margin: 0;
 }
-.resultBox{
-	letter-spacing: -0.4em;
-	position: relative;
+.resultBox td{
+	padding: 0;
+	border: none;
 }
-.resultBox > *{
-	letter-spacing: normal;
-	vertical-align: middle;
-	box-sizing: border-box;
+.resultBox .cellTxt{
+	padding:4.6% 0;
 }
-.resultBox > span{
-	display: inline-block;
-	width: 55%;
+.resultBox .cellBtn{
+	width: 45%;
+	text-align: right;
 }
 
 .btnBlue{
 	display: inline-block;
 	background: #127CCD;
-	padding:5% 0;
+	padding:12% 9%;
 	color: #FFF;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 5px;
-}
-.resultBox .btnBlue{
-	width: 45%;
 }
 
 
@@ -654,7 +715,7 @@ table.tblBDTN tr:first-child td{border-top: none;}
 
 
 /* Font */
-.txtLBlk1{color: #000 !important;}
+.txtBlk1{color: #000 !important;}
 .txtRed1{color: #D80000 !important;}
 .txtLBlue1{color: #127CCD !important;}
 .txtLGrey1{color: #878787 !important;}
