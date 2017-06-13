@@ -294,7 +294,7 @@ th,td{
 .tblBeige td{
 }
 .tblBeige a{
-	color: #127CCD;
+/*	color: #127CCD;*/
 }
 .tblRadius{
 	width: 93%;
@@ -598,24 +598,35 @@ table.tblBDTN tr:first-child td{border-top: none;}
 	margin: 0 auto;
 }
 
+.resultBoxWrap{
+}
 .resultBox{
+	letter-spacing: -0.4em;
 	position: relative;
+}
+.resultBox > *{
+	letter-spacing: normal;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.resultBox > span{
+	display: inline-block;
+	width: 55%;
 }
 
 .btnBlue{
 	display: inline-block;
-	padding: 5%;
-	color: #FFF;
 	background: #127CCD;
-	border-radius: 5px;
+	padding:5% 0;
+	color: #FFF;
+	text-align: center;
 	text-decoration: none;
-	
+	border-radius: 5px;
 }
 .resultBox .btnBlue{
-	position: absolute;
-	right: 0px;
-margin: -5%;
+	width: 45%;
 }
+
 
 /*------------------------
          CLASS
