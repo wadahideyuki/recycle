@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ja"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<title>車両検索</title>
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/common.js"></script>
+	<style>
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>車両検索</h1>
+		<a href="#" class="logo"><img src="../images/logo.png" alt=""/></a>
+	</header>
+	<div class="ttlArea clearfix">
+		<span class="ttl">VDIS0010_M</span>
+		<span class="date">2017/04/06 15:32:45</span>
+	</div>
+
+	<div class="content">
+		<section>
+			<h2 class="ttlBlue">お手持ちの引取証明書をご覧になり、以下の各情報を入力してください。</h2>
+			<p class="fz12 MB1P"><a href="#">引取証明書のサンプル</a></p>
+			<div class="helpBox">
+				<div class="helpBtnRow">
+					<p class="fz12">引取証明書以外で車両情報が確認できる書類はこちら</p>
+					<a class="helpBtn" href="#">
+						<img class="btnOpn" src="../images/btn_help.png" width="100%" alt=""/>
+						<img class="btnCls" src="../images/btn_help_cls.png" width="100%" alt=""/>
+					</a>
+				</div>
+				<div class="helpPart">
+					<dl>
+						<dt class="helpTtl">車両の情報が確認できる書類</dt>
+						<dd class="helpTxt">引取証明書（引取業者が作成する証明書）（※）<br>
+							引取証明書（リサイクル券のB券）<br>
+							車検証<br>
+							自動車保険証券<br>
+							自動車税の納税証明書（※）<br>
+							<br>
+							※ 必要な情報が記載ない場合があります</dd>
+					</dl>
+				</div>
+			</div>
+
+
+			<div class="whiteBox1">
+				<div class="spaceBox">
+					<h3 class="ttlType1">① 自動車の種別</h3>
+
+					<div class="tabBox1 noCont">
+						<ul class="tabPart col2 is_type2">
+							<li class="tabNo1 show">登録自動車</li>
+							<li class="tabNo2">軽自動車</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="spaceBox is_type2 space3">
+					<h3 class="ttlType1">② 車台番号</h3>
+
+					<div class="tabBox1">
+						<ul class="tabPart col2 is_type2">
+							<li class="tabNo1 show">英数字のみの場合</li>
+							<li class="tabNo2">漢字がある場合</li>
+						</ul>
+
+						<ul class="tabConts">
+							<li class="tabContNo1 show">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th>下４桁を入力</th>
+													<td>
+														<input type="number" name="shadai_no_4" maxlength="4" size="8" value="" style="ime-mode: inactive;" class="inputType1" placeholder="例) 0000">
+														<small class="note">[半角英数] [ハイフンを含む場合、これらも含めて入力してください]</small>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo1-->
+
+							<li class="tabContNo2">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th rowspan="2">全桁を入力</th>
+													<td class="colNo2">
+														<select name="kanji" onchange="setDakokumoji();" class="slctClr inputType1 unselect">
+															<option value="">選択</option>
+															<option value="01">国</option>
+															<option value="11">札</option>
+															<option value="12">函</option>
+															<option value="13">室</option>
+															<option value="14">帯</option>
+															<option value="15">釧</option>
+															<option value="16">北</option>
+															<option value="17">旭</option>
+															<option value="21">宮</option>
+															<option value="22">島</option>
+															<option value="23">手</option>
+															<option value="24">青</option>
+															<option value="31">新</option>
+															<option value="32">野</option>
+															<option value="33">形</option>
+															<option value="34">秋</option>
+															<option value="41">東</option>
+															<option value="42">神</option>
+															<option value="43">千</option>
+															<option value="44">玉</option>
+															<option value="45">茨</option>
+															<option value="46">群</option>
+															<option value="47">栃</option>
+															<option value="48">山</option>
+															<option value="51">愛</option>
+															<option value="52">静</option>
+															<option value="53">岐</option>
+															<option value="54">三</option>
+															<option value="55">井</option>
+															<option value="56">石</option>
+															<option value="57">富</option>
+															<option value="61">大</option>
+															<option value="62">京</option>
+															<option value="63">兵</option>
+															<option value="64">賀</option>
+															<option value="65">奈</option>
+															<option value="66">歌</option>
+															<option value="71">広</option>
+															<option value="72">取</option>
+															<option value="73">根</option>
+															<option value="74">岡</option>
+															<option value="75">口</option>
+															<option value="81">香</option>
+															<option value="82">徳</option>
+															<option value="83">媛</option>
+															<option value="84">知</option>
+															<option value="91">福</option>
+															<option value="92">佐</option>
+															<option value="93">長</option>
+															<option value="94">本</option>
+															<option value="95">分</option>
+															<option value="96">崎</option>
+															<option value="97">児</option>
+															<option value="99">沖</option>
+														</select>
+													</td>
+													<td class="colNo2_2">
+														<input type="text" name="shadai_no_kanji_cd" value="" class="inputType1 disabled" disabled>
+													</td>
+												</tr>
+												<tr>
+													<td class="colNo2">
+														<input type="text" name="shadai_no_no" maxlength="7" value="" style="ime-mode: inactive;" class="imeActive inputType1" placeholder="例) 0000000">
+														<small class="note">[半角数字]</small>
+													</td>
+													<td class="colNo2_2">
+														<input type="text" name="shadai_no_kanji_txt" value="" class="inputType1 disabled" disabled>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo2-->
+						</ul><!--/.tabConts-->
+					</div>
+				</div>
+
+				<div class="spaceBox is_type2 space3">
+					<h3 class="ttlType1">③自動車登録番号又は車両番号</h3>
+					<p class="MB3P">自動車登録番号又は車両番号が不明な場合、リサイクル券番号を入力してください</p>
+
+					<div class="tabBox1">
+						<ul class="tabPart col2 is_type2">
+							<li class="tabNo1 show">登録番号/車両番号</li>
+							<li class="tabNo2">リサイクル券番号</li>
+						</ul>
+
+						<ul class="tabConts">
+							<li class="tabContNo1 show">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th>支局名</th>
+													<td class="colNo3">
+														<select name="touroku_shikyoku_sel" onchange="setShikyoku();" class="slctClr inputType1 unselect">
+															<option value="">選択</option>
+															<option value="札">札</option>
+															<option value="札幌">札幌</option>
+															<option value="函">函</option>
+															<option value="函館">函館</option>
+															<option value="室">室</option>
+															<option value="室蘭">室蘭</option>
+															<option value="帯">帯</option>
+															<option value="帯広">帯広</option>
+															<option value="釧">釧</option>
+															<option value="釧路">釧路</option>
+															<option value="北">北</option>
+															<option value="北見">北見</option>
+															<option value="旭">旭</option>
+															<option value="旭川">旭川</option>
+															<option value="宮">宮</option>
+															<option value="宮城">宮城</option>
+															<option value="仙台">仙台</option>
+															<option value="福島">福島</option>
+															<option value="いわき">いわき</option>
+															<option value="会津">会津</option>
+															<option value="郡山">郡山</option>
+															<option value="岩">岩</option>
+															<option value="岩手">岩手</option>
+															<option value="盛岡">盛岡</option>
+															<option value="平泉">平泉</option>
+															<option value="青">青</option>
+															<option value="青森">青森</option>
+															<option value="八戸">八戸</option>
+															<option value="新">新</option>
+															<option value="新潟">新潟</option>
+															<option value="長岡">長岡</option>
+															<option value="長">長</option>
+															<option value="長野">長野</option>
+															<option value="松本">松本</option>
+															<option value="諏訪">諏訪</option>
+															<option value="山形">山形</option>
+															<option value="庄内">庄内</option>
+															<option value="秋">秋</option>
+															<option value="秋田">秋田</option>
+															<option value="品">品</option>
+															<option value="品川">品川</option>
+															<option value="世田谷">世田谷</option>
+															<option value="足">足</option>
+															<option value="足立">足立</option>
+															<option value="練">練</option>
+															<option value="練馬">練馬</option>
+															<option value="杉並">杉並</option>
+															<option value="多">多</option>
+															<option value="多摩">多摩</option>
+															<option value="八王子">八王子</option>
+															<option value="神">神</option>
+															<option value="横浜">横浜</option>
+															<option value="川崎">川崎</option>
+															<option value="相模">相模</option>
+															<option value="湘南">湘南</option>
+															<option value="千">千</option>
+															<option value="千葉">千葉</option>
+															<option value="成田">成田</option>
+															<option value="袖ヶ浦">袖ヶ浦</option>
+															<option value="野田">野田</option>
+															<option value="柏">柏</option>
+															<option value="習志野">習志野</option>
+															<option value="埼">埼</option>
+															<option value="埼玉">埼玉</option>
+															<option value="大宮">大宮</option>
+															<option value="川口">川口</option>
+															<option value="熊谷">熊谷</option>
+															<option value="所沢">所沢</option>
+															<option value="川越">川越</option>
+															<option value="春日部">春日部</option>
+															<option value="越谷">越谷</option>
+															<option value="茨">茨</option>
+															<option value="茨城">茨城</option>
+															<option value="水戸">水戸</option>
+															<option value="土浦">土浦</option>
+															<option value="つくば">つくば</option>
+															<option value="群">群</option>
+															<option value="群馬">群馬</option>
+															<option value="高崎">高崎</option>
+															<option value="前橋">前橋</option>
+															<option value="栃">栃</option>
+															<option value="栃木">栃木</option>
+															<option value="宇都宮">宇都宮</option>
+															<option value="那須">那須</option>
+															<option value="とちぎ">とちぎ</option>
+															<option value="山梨">山梨</option>
+															<option value="富士山">富士山</option>
+															<option value="愛">愛</option>
+															<option value="名古屋">名古屋</option>
+															<option value="豊橋">豊橋</option>
+															<option value="三河">三河</option>
+															<option value="岡崎">岡崎</option>
+															<option value="豊田">豊田</option>
+															<option value="尾張小牧">尾張小牧</option>
+															<option value="一宮">一宮</option>
+															<option value="春日井">春日井</option>
+															<option value="静">静</option>
+															<option value="静岡">静岡</option>
+															<option value="浜松">浜松</option>
+															<option value="沼津">沼津</option>
+															<option value="伊豆">伊豆</option>
+															<option value="岐">岐</option>
+															<option value="岐阜">岐阜</option>
+															<option value="飛騨">飛騨</option>
+															<option value="三">三</option>
+															<option value="三重">三重</option>
+															<option value="鈴鹿">鈴鹿</option>
+															<option value="福井">福井</option>
+															<option value="石">石</option>
+															<option value="石川">石川</option>
+															<option value="金沢">金沢</option>
+															<option value="富">富</option>
+															<option value="富山">富山</option>
+															<option value="大">大</option>
+															<option value="大阪">大阪</option>
+															<option value="なにわ">なにわ</option>
+															<option value="泉">泉</option>
+															<option value="和泉">和泉</option>
+															<option value="堺">堺</option>
+															<option value="京">京</option>
+															<option value="京都">京都</option>
+															<option value="兵">兵</option>
+															<option value="神戸">神戸</option>
+															<option value="姫路">姫路</option>
+															<option value="滋">滋</option>
+															<option value="滋賀">滋賀</option>
+															<option value="奈">奈</option>
+															<option value="奈良">奈良</option>
+															<option value="和">和</option>
+															<option value="和歌山">和歌山</option>
+															<option value="広">広</option>
+															<option value="広島">広島</option>
+															<option value="福山">福山</option>
+															<option value="鳥">鳥</option>
+															<option value="鳥取">鳥取</option>
+															<option value="嶋">嶋</option>
+															<option value="島根">島根</option>
+															<option value="岡">岡</option>
+															<option value="岡山">岡山</option>
+															<option value="倉敷">倉敷</option>
+															<option value="山">山</option>
+															<option value="山口">山口</option>
+															<option value="下関">下関</option>
+															<option value="香">香</option>
+															<option value="香川">香川</option>
+															<option value="徳">徳</option>
+															<option value="徳島">徳島</option>
+															<option value="愛媛">愛媛</option>
+															<option value="高">高</option>
+															<option value="高知">高知</option>
+															<option value="福">福</option>
+															<option value="福岡">福岡</option>
+															<option value="久留米">久留米</option>
+															<option value="筑豊">筑豊</option>
+															<option value="北九州">北九州</option>
+															<option value="佐">佐</option>
+															<option value="佐賀">佐賀</option>
+															<option value="長崎">長崎</option>
+															<option value="佐世保">佐世保</option>
+															<option value="熊">熊</option>
+															<option value="熊本">熊本</option>
+															<option value="大分">大分</option>
+															<option value="宮崎">宮崎</option>
+															<option value="鹿">鹿</option>
+															<option value="鹿児島">鹿児島</option>
+															<option value="奄美">奄美</option>
+															<option value="沖">沖</option>
+															<option value="沖縄">沖縄</option>
+															<option value="指定無し">指定無し</option>
+														</select>
+													</td>
+													<td class="colNo3_2"></td>
+												</tr>
+												<tr>
+													<th>分類番号</th>
+													<td class="colNo3">
+														<input type="text" name="touroku_bunrui" maxlength="3" value="" style="ime-mode: inactive;" class="inputType1" placeholder="例) 000">
+													</td>
+													<td class="colNo3_2 vaM"><small class="note">[半角英数]</small></td>
+												</tr>
+												<tr>
+													<th>かな</th>
+													<td class="colNo3">
+														<select name="touroku_kana" class="slctClr inputType1 unselect">
+															<option value="">選択</option>
+															<option value="あ">あ</option>
+															<option value="い">い</option>
+															<option value="う">う</option>
+															<option value="え">え</option>
+															<option value="か">か</option>
+															<option value="き">き</option>
+															<option value="く">く</option>
+															<option value="け">け</option>
+															<option value="こ">こ</option>
+															<option value="さ">さ</option>
+															<option value="す">す</option>
+															<option value="せ">せ</option>
+															<option value="そ">そ</option>
+															<option value="た">た</option>
+															<option value="ち">ち</option>
+															<option value="つ">つ</option>
+															<option value="て">て</option>
+															<option value="と">と</option>
+															<option value="な">な</option>
+															<option value="に">に</option>
+															<option value="ぬ">ぬ</option>
+															<option value="ね">ね</option>
+															<option value="の">の</option>
+															<option value="は">は</option>
+															<option value="ひ">ひ</option>
+															<option value="ふ">ふ</option>
+															<option value="ほ">ほ</option>
+															<option value="ま">ま</option>
+															<option value="み">み</option>
+															<option value="む">む</option>
+															<option value="め">め</option>
+															<option value="も">も</option>
+															<option value="や">や</option>
+															<option value="ゆ">ゆ</option>
+															<option value="よ">よ</option>
+															<option value="ら">ら</option>
+															<option value="り">り</option>
+															<option value="る">る</option>
+															<option value="れ">れ</option>
+															<option value="ろ">ろ</option>
+															<option value="わ">わ</option>
+															<option value="を">を</option>
+															<option value="Ａ">Ａ</option>
+															<option value="Ｂ">Ｂ</option>
+															<option value="Ｅ">Ｅ</option>
+															<option value="Ｈ">Ｈ</option>
+															<option value="Ｋ">Ｋ</option>
+															<option value="Ｍ">Ｍ</option>
+															<option value="Ｔ">Ｔ</option>
+														<option value="Ｙ">Ｙ</option>
+														</select>
+													</td>
+													<td class="colNo3_2"></td>
+												</tr>
+												<tr>
+													<th>一連指定番号</th>
+													<td class="colNo3">
+														<input type="text" name="touroku_ichiren" maxlength="4" value="" style="ime-mode: inactive;" class="inputType1" placeholder="例) 0000">
+													</td>
+													<td class="colNo3_2 vaM"><small class="note">[半角英数]</small></td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo1-->
+
+							<li class="tabContNo2">
+								<ul class="formTbl1">
+									<li>
+										<table>
+											<tbody>
+												<tr>
+													<th>リサイクル券番号</th>
+													<td>
+														<input type="text" name="recycleken_no" maxlength="12" size="20" value="" style="ime-mode: inactive;" class="inputType1" placeholder="例) 000000000000">
+														<small class="note">[半角英数]</small>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+								</ul>
+							</li><!--/.tabContNo2-->
+						</ul><!--/.tabConts-->
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<h2 class="ttlBlue">入力内容をもう一度確認して、間違いがなければ、「検索」ボタンを押してください。</h2>
+		</section>
+
+		<section>
+			<div class="taC">
+				<a class="btn1 is_type1 is_clr2" href="KDIS0011.html">検索</a>
+			</div>
+		</section>
+
+
+		<a class="toTop" href="#"><img src="../images/totop.png" alt=""/></a>
+	</div><!--/.content-->
+</body>
+</html>
