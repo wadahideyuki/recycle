@@ -36,6 +36,18 @@ $(".tabBox1 .tabPart > li").click(function(){
 	}
 });//.tabBox1 .tabPart > li ClkEnd
 
+//tabの切替2
+$(".tabBox2 > li").click(function(){
+	if($(this).hasClass("show")){
+		return false;
+	}else{
+		var parents = $(this).parents(".tabBox2");
+		parents.children("li").removeClass("show");
+		$(this).addClass("show");
+		return false;
+	}
+});//.tabBox2 > li ClkEnd
+
 
 /*----- .rdoList1 -----*/
 $(".rdoList1 input:radio").click(function(){

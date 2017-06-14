@@ -586,6 +586,7 @@ table.tblBDTN tr:first-child td{border-top: none;}
 .tabBox1{}
 .tabBox1 .tabPart{
 	display: table;
+	background-color: #fff;
 	width: 100%;
 	margin-left:auto;
 	margin-right:auto;
@@ -605,15 +606,48 @@ table.tblBDTN tr:first-child td{border-top: none;}
 	vertical-align: middle;
 	box-sizing: border-box;
 }
-	.tabBox1 .tabPart.is_type2 > li{
-		padding:2.62% 2.7%;
-	}
+	.tabBox1 .tabPart.is_type2 > li{padding:2.62% 2.7%;}
 	.tabBox1 .tabPart > li.show{background-color: #CBE0F0;}
-		.tabBox1.color2 .tabPart > li.show{background-color: #F4D9CF;}
 	.tabBox1 .tabPart.col2 > li{width: 50%;}
 	.tabBox1 .tabPart.col3 > li{width: 33.3333%;}
 .tabBox1 .tabConts > li{display: none;}
 .tabBox1 .tabConts > li.show{display: block;}
+
+.tabBox1.color2{/* オレンジ */}
+.tabBox1.color2 .tabPart > li.show{background-color: #F4D9CF;}
+
+.tabBox1.withNone{/* 中身が無い物がある場合 */}
+.tabBox1.withNone .tabPart{margin-bottom: auto;}
+.tabBox1.withNone .tabConts > li.MTcont{margin-top: 6.4286%;}
+
+.tabBox2{/* table内に有り小さい、コンテンツの切替無し */
+	display: table;
+	background-color: #fff;
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	color: #000;
+	letter-spacing: -0.4em;
+	line-height: 1.2;
+	border: 5px solid #c8c8c8;
+	border-radius: 8px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.tabBox2 > li{
+	display: table-cell;
+	padding:1.84% 2.7%;
+	letter-spacing: normal;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+	.tabBox2.is_type2 > li{padding:2.62% 2.7%;}
+	.tabBox2 > li.show{background-color: #CBE0F0;}
+	.tabBox2.col2 > li{width: 50%;}
+	.tabBox2.col3 > li{width: 33.3333%;}
+
+.tabBox2.color2{/* オレンジ */}
+.tabBox2.color2 > li.show{background-color: #F4D9CF;}
 
 
 /* アコーディオン */

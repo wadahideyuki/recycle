@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="shortcut icon" href="http://fani.wadakoubou.com/recycle/favicon.ico" />
+	<link rel="shortcut icon" href="../favicon.ico" />
 	<title>リサイクル料金検索</title>
 	<link href="../css/reset.css" rel="stylesheet" type="text/css">
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
@@ -82,9 +82,9 @@
 										<table>
 											<tbody>
 												<tr>
-													<th>車台番号</th>
+													<th>下４桁を入力</th>
 													<td>
-														<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
+														<input type="number" name="KDIS0010_txtSydiNo4" maxlength="4" value="" class="inputType1" placeholder="例) 0000">
 														<small class="note">[半角英数] [ハイフンを含む場合、これらも含めて入力してください]</small>
 													</td>
 												</tr>
@@ -101,71 +101,77 @@
 										<table>
 											<tbody>
 												<tr>
-													<th rowspan="2">職権打刻番号</th>
-													<td>
-														<select name="JOSS8010_selSykndkkNo1" class="slctClr inputType1 unselect">
+													<th rowspan="2">全桁を入力</th>
+													<td class="colNo2">
+														<select name="KDIS0010_selSDMz" onchange="setDakokumoji();" class="slctClr inputType1 unselect">
 															<option value="" selected="selected">選択</option>
-															<option value="国">国</option>
-															<option value="札">札</option>
-															<option value="函">函</option>
-															<option value="室">室</option>
-															<option value="帯">帯</option>
-															<option value="釧">釧</option>
-															<option value="北">北</option>
-															<option value="旭">旭</option>
-															<option value="宮">宮</option>
-															<option value="島">島</option>
-															<option value="手">手</option>
-															<option value="青">青</option>
-															<option value="新">新</option>
-															<option value="野">野</option>
-															<option value="形">形</option>
-															<option value="秋">秋</option>
-															<option value="東">東</option>
-															<option value="神">神</option>
-															<option value="千">千</option>
-															<option value="玉">玉</option>
-															<option value="茨">茨</option>
-															<option value="群">群</option>
-															<option value="栃">栃</option>
-															<option value="山">山</option>
-															<option value="愛">愛</option>
-															<option value="静">静</option>
-															<option value="岐">岐</option>
-															<option value="三">三</option>
-															<option value="井">井</option>
-															<option value="石">石</option>
-															<option value="富">富</option>
-															<option value="大">大</option>
-															<option value="京">京</option>
-															<option value="兵">兵</option>
-															<option value="賀">賀</option>
-															<option value="奈">奈</option>
-															<option value="歌">歌</option>
-															<option value="広">広</option>
-															<option value="取">取</option>
-															<option value="根">根</option>
-															<option value="岡">岡</option>
-															<option value="口">口</option>
-															<option value="香">香</option>
-															<option value="徳">徳</option>
-															<option value="媛">媛</option>
-															<option value="知">知</option>
-															<option value="福">福</option>
-															<option value="佐">佐</option>
-															<option value="長">長</option>
-															<option value="本">本</option>
-															<option value="分">分</option>
-															<option value="崎">崎</option>
-															<option value="児">児</option>
-															<option value="沖">沖</option>
+															<option value="01">国</option>
+															<option value="11">札</option>
+															<option value="12">函</option>
+															<option value="13">室</option>
+															<option value="14">帯</option>
+															<option value="15">釧</option>
+															<option value="16">北</option>
+															<option value="17">旭</option>
+															<option value="21">宮</option>
+															<option value="22">島</option>
+															<option value="23">手</option>
+															<option value="24">青</option>
+															<option value="31">新</option>
+															<option value="32">野</option>
+															<option value="33">形</option>
+															<option value="34">秋</option>
+															<option value="41">東</option>
+															<option value="42">神</option>
+															<option value="43">千</option>
+															<option value="44">玉</option>
+															<option value="45">茨</option>
+															<option value="46">群</option>
+															<option value="47">栃</option>
+															<option value="48">山</option>
+															<option value="51">愛</option>
+															<option value="52">静</option>
+															<option value="53">岐</option>
+															<option value="54">三</option>
+															<option value="55">井</option>
+															<option value="56">石</option>
+															<option value="57">富</option>
+															<option value="61">大</option>
+															<option value="62">京</option>
+															<option value="63">兵</option>
+															<option value="64">賀</option>
+															<option value="65">奈</option>
+															<option value="66">歌</option>
+															<option value="71">広</option>
+															<option value="72">取</option>
+															<option value="73">根</option>
+															<option value="74">岡</option>
+															<option value="75">口</option>
+															<option value="81">香</option>
+															<option value="82">徳</option>
+															<option value="83">媛</option>
+															<option value="84">知</option>
+															<option value="91">福</option>
+															<option value="92">佐</option>
+															<option value="93">長</option>
+															<option value="94">本</option>
+															<option value="95">分</option>
+															<option value="96">崎</option>
+															<option value="97">児</option>
+															<option value="99">沖</option>
 														</select>
+													</td>
+													<td class="colNo2_2">
+														<input type="text" name="KDIS0010_txtSDCd" size="4" value="" class="inputType1 disabled" disabled>
 													</td>
 												</tr>
 												<tr>
-													<td>
-														<input type="number" name="JOSS8010_txtSykndkkNo3" maxlength="7" value="" class="imeActive inputType1" placeholder="例）０００００００">
-														<small class="note">[7桁以下の全角数字]</small>
+													<td class="colNo2">
+														<input type="text" name="KDIS0010_txtSDNo" maxlength="7" size="14" value="" class="imeActive inputType1" placeholder="例) 0000000">
+														<small class="note">[半角数字]</small>
+													</td>
+													<td class="colNo2_2">
+														<input type="text" name="KDIS0010_txtSDMz" size="2" value="" class="inputType1 disabled" disabled>
 													</td>
 												</tr>
 											</tbody>
@@ -184,6 +190,7 @@
 							<img class="btnOpn" src="../images/btn_help.png" width="100%" alt=""/>
 							<img class="btnCls" src="../images/btn_help_cls.png" width="100%" alt=""/>
 						</a>
+						<p class="MB3P">自動車登録番号又は車両番号が不明な場合、リサイクル券番号を入力してください</p>
 						<div class="helpPart">
 							<dl>
 								<dt class="helpTtl">入力方法</dt>
@@ -207,11 +214,253 @@
 												<tr>
 													<th>支局名</th>
 													<td class="colNo3">
-														<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
+														<select name="KDIS0010_selSNm" onchange="setShikyoku();" class="slctClr inputType1 unselect">
+															<option value="" selected="selected">選択</option>
+															<option value="11101">札</option>
+															<option value="11102">札幌</option>
+															<option value="12101">函</option>
+															<option value="12102">函館</option>
+															<option value="13101">室</option>
+															<option value="13102">室蘭</option>
+															<option value="14101">帯</option>
+															<option value="14102">帯広</option>
+															<option value="15101">釧</option>
+															<option value="15102">釧路</option>
+															<option value="16101">北</option>
+															<option value="16102">北見</option>
+															<option value="17101">旭</option>
+															<option value="17102">旭川</option>
+															<option value="21101">宮</option>
+															<option value="21102">宮城</option>
+															<option value="21180">仙台</option>
+															<option value="22102">福島</option>
+															<option value="22203">いわき</option>
+															<option value="22180">会津</option>
+															<option value="22181">郡山</option>
+															<option value="23101">岩</option>
+															<option value="23102">岩手</option>
+															<option value="23180">盛岡</option>
+															<option value="23181">平泉</option>
+															<option value="24101">青</option>
+															<option value="24102">青森</option>
+															<option value="24202">八戸</option>
+															<option value="31101">新</option>
+															<option value="31102">新潟</option>
+															<option value="31202">長岡</option>
+															<option value="32101">長</option>
+															<option value="32102">長野</option>
+															<option value="32202">松本</option>
+															<option value="32280">諏訪</option>
+															<option value="33102">山形</option>
+															<option value="33205">庄内</option>
+															<option value="34101">秋</option>
+															<option value="34102">秋田</option>
+															<option value="41101">品</option>
+															<option value="41102">品川</option>
+															<option value="41180">世田谷</option>
+															<option value="41201">足</option>
+															<option value="41202">足立</option>
+															<option value="41301">練</option>
+															<option value="41302">練馬</option>
+															<option value="41380">杉並</option>
+															<option value="41401">多</option>
+															<option value="41402">多摩</option>
+															<option value="41503">八王子</option>
+															<option value="42101">神</option>
+															<option value="42102">横浜</option>
+															<option value="42305">川崎</option>
+															<option value="42202">相模</option>
+															<option value="42405">湘南</option>
+															<option value="43101">千</option>
+															<option value="43102">千葉</option>
+															<option value="43180">成田</option>
+															<option value="43303">袖ヶ浦</option>
+															<option value="43402">野田</option>
+															<option value="43480">柏</option>
+															<option value="43203">習志野</option>
+															<option value="44101">埼</option>
+															<option value="44103">埼玉</option>
+															<option value="44102">大宮</option>
+															<option value="44180">川口</option>
+															<option value="44202">熊谷</option>
+															<option value="44305">所沢</option>
+															<option value="44380">川越</option>
+															<option value="44403">春日部</option>
+															<option value="44480">越谷</option>
+															<option value="45101">茨</option>
+															<option value="45103">茨城</option>
+															<option value="45102">水戸</option>
+															<option value="45202">土浦</option>
+															<option value="45280">つくば</option>
+															<option value="46101">群</option>
+															<option value="46102">群馬</option>
+															<option value="46180">高崎</option>
+															<option value="46181">前橋</option>
+															<option value="47101">栃</option>
+															<option value="47102">栃木</option>
+															<option value="47103">宇都宮</option>
+															<option value="47180">那須</option>
+															<option value="47203">とちぎ</option>
+															<option value="48102">山梨</option>
+															<option value="48180">富士山</option>
+															<option value="51101">愛</option>
+															<option value="51103">名古屋</option>
+															<option value="51405">豊橋</option>
+															<option value="51202">三河</option>
+															<option value="51280">岡崎</option>
+															<option value="51281">豊田</option>
+															<option value="51304">尾張小牧</option>
+															<option value="51380">一宮</option>
+															<option value="51381">春日井</option>
+															<option value="52101">静</option>
+															<option value="52102">静岡</option>
+															<option value="52202">浜松</option>
+															<option value="52303">沼津</option>
+															<option value="52380">伊豆</option>
+															<option value="53101">岐</option>
+															<option value="53102">岐阜</option>
+															<option value="53205">飛騨</option>
+															<option value="54101">三</option>
+															<option value="54102">三重</option>
+															<option value="54180">鈴鹿</option>
+															<option value="55102">福井</option>
+															<option value="56101">石</option>
+															<option value="56102">石川</option>
+															<option value="56180">金沢</option>
+															<option value="57101">富</option>
+															<option value="57102">富山</option>
+															<option value="61104">大</option>
+															<option value="61102">大阪</option>
+															<option value="61303">なにわ</option>
+															<option value="61201">泉</option>
+															<option value="61202">和泉</option>
+															<option value="61280">堺</option>
+															<option value="62101">京</option>
+															<option value="62102">京都</option>
+															<option value="63101">兵</option>
+															<option value="63102">神戸</option>
+															<option value="63202">姫路</option>
+															<option value="64101">滋</option>
+															<option value="64102">滋賀</option>
+															<option value="65101">奈</option>
+															<option value="65102">奈良</option>
+															<option value="66101">和</option>
+															<option value="66103">和歌山</option>
+															<option value="71101">広</option>
+															<option value="71102">広島</option>
+															<option value="71202">福山</option>
+															<option value="72101">鳥</option>
+															<option value="72102">鳥取</option>
+															<option value="73101">嶋</option>
+															<option value="73102">島根</option>
+															<option value="74101">岡</option>
+															<option value="74102">岡山</option>
+															<option value="74180">倉敷</option>
+															<option value="75101">山</option>
+															<option value="75102">山口</option>
+															<option value="75180">下関</option>
+															<option value="81101">香</option>
+															<option value="81102">香川</option>
+															<option value="82101">徳</option>
+															<option value="82102">徳島</option>
+															<option value="83102">愛媛</option>
+															<option value="84101">高</option>
+															<option value="84102">高知</option>
+															<option value="91101">福</option>
+															<option value="91102">福岡</option>
+															<option value="91303">久留米</option>
+															<option value="91405">筑豊</option>
+															<option value="91203">北九州</option>
+															<option value="92101">佐</option>
+															<option value="92102">佐賀</option>
+															<option value="93102">長崎</option>
+															<option value="93203">佐世保</option>
+															<option value="94101">熊</option>
+															<option value="94102">熊本</option>
+															<option value="95102">大分</option>
+															<option value="96102">宮崎</option>
+															<option value="97101">鹿</option>
+															<option value="97103">鹿児島</option>
+															<option value="97280">奄美</option>
+															<option value="99101">沖</option>
+															<option value="99102">沖縄</option>
+															<option value="41100">指定無し</option>
+														</select>
 													</td>
-													<td class="colNo3_2">
-														<small class="note">[半角英数]</small>
+													<td class="colNo3_2"></td>
+												</tr>
+												<tr>
+													<th>分類番号</th>
+													<td class="colNo3">
+														<input type="number" name="KDIS0010_txtBnriNo" maxlength="3" size="6" value="" class="inputType1" placeholder="例) 000">
 													</td>
+													<td class="colNo3_2"><small class="note">[半角英数]</small></td>
+												</tr>
+												<tr>
+													<th>かな</th>
+													<td class="colNo3">
+														<select name="KDIS0010_selKn" class="slctClr inputType1 unselect">
+															<option value="">選択</option>
+															<option value="あ">あ</option>
+															<option value="い">い</option>
+															<option value="う">う</option>
+															<option value="え">え</option>
+															<option value="か">か</option>
+															<option value="き">き</option>
+															<option value="く">く</option>
+															<option value="け">け</option>
+															<option value="こ">こ</option>
+															<option value="さ">さ</option>
+															<option value="す">す</option>
+															<option value="せ">せ</option>
+															<option value="そ">そ</option>
+															<option value="た">た</option>
+															<option value="ち">ち</option>
+															<option value="つ">つ</option>
+															<option value="て">て</option>
+															<option value="と">と</option>
+															<option value="な">な</option>
+															<option value="に">に</option>
+															<option value="ぬ">ぬ</option>
+															<option value="ね">ね</option>
+															<option value="の">の</option>
+															<option value="は">は</option>
+															<option value="ひ">ひ</option>
+															<option value="ふ">ふ</option>
+															<option value="ほ">ほ</option>
+															<option value="ま">ま</option>
+															<option value="み">み</option>
+															<option value="む">む</option>
+															<option value="め">め</option>
+															<option value="も">も</option>
+															<option value="や">や</option>
+															<option value="ゆ">ゆ</option>
+															<option value="よ">よ</option>
+															<option value="ら">ら</option>
+															<option value="り">り</option>
+															<option value="る">る</option>
+															<option value="れ">れ</option>
+															<option value="ろ">ろ</option>
+															<option value="わ">わ</option>
+															<option value="を">を</option>
+															<option value="Ａ">Ａ</option>
+															<option value="Ｂ">Ｂ</option>
+															<option value="Ｅ">Ｅ</option>
+															<option value="Ｈ">Ｈ</option>
+															<option value="Ｋ">Ｋ</option>
+															<option value="Ｍ">Ｍ</option>
+															<option value="Ｔ">Ｔ</option>
+															<option value="Ｙ">Ｙ</option>
+														</select>
+													</td>
+													<td class="colNo3_2"></td>
+												</tr>
+												<tr>
+													<th>一連指定番号</th>
+													<td class="colNo3">
+														<input type="number" name="KDIS0010_txtItrnStiNo" maxlength="4" size="8" value="" class="inputType1" placeholder="例) 0000">
+													</td>
+													<td class="colNo3_2"><small class="note">[半角英数]</small></td>
 												</tr>
 											</tbody>
 										</table>
@@ -227,7 +476,7 @@
 												<tr>
 													<th>リサイクル券番号</th>
 													<td>
-														<input type="number" name="JOSS8010_txtSydiNo" maxlength="42" value="" class="imeOff inputType1" placeholder="例）Sample-000001">
+														<input type="number" name="KDIS0010_txtRKNo" maxlength="12" size="18" value="" class="inputType1" placeholder="例) 000000000000">
 														<small class="note">[半角英数]</small>
 													</td>
 												</tr>
@@ -245,35 +494,44 @@
 
 
 		<section>
-			<h2 class="ttlOrange">ご利用目的を選択してください。<br>
-			<span>廃車時に必要な料金を知りたい方は、エアバック類とフロン類(エアコン)の装備を選択</span></h2>
+			<h2 class="ttlOrange">
+				ご利用目的を選択してください。<br>
+				<span>廃車時に必要な料金を知りたい方は、エアバック類とフロン類(エアコン)の装備を選択</span>
+			</h2>
 
-			<div class="tabBox1 color2">
-				<ul class="tabPart col2 is_type2">
-					<li class="tabNo1 show">リサイクル料金の預託状況</li>
-					<li class="tabNo2">廃車時に必要なリサイクル料金</li>
-				</ul>
+			<div class="whiteBox1">
+				<div class="tabBox1 color2 withNone">
+					<ul class="tabPart col2 is_type2">
+						<li class="tabNo1 show">リサイクル料金の預託状況</li>
+						<li class="tabNo2">廃車時に必要なリサイクル料金</li>
+					</ul>
 
-				<ul class="tabConts">
-					<li class="tabContNo1 show">
-						<div class="acrdBox1 opn">
-							<h3 class="ttlBeige acrdBtn">取引工程</h3>
-							<div class="acrdPart" style="display: block;">
-								
-							</div>
-						</div>
-					</li><!--/.tabContNo1-->
+					<ul class="tabConts">
+						<li class="tabContNo1 show">
+						</li><!--/.tabContNo1-->
 
-					<li class="tabContNo2">
-						<div class="acrdBox1 opn">
-							<h3 class="ttlBeige acrdBtn">フロン類</h3>
-							<div class="acrdPart" style="display: block;">
-								
-							</div>
-						</div>
-					</li><!--/.tabContNo2-->
-				</ul><!--/.tabConts-->
-			</div><!--/.tabBox1-->
+						<li class="tabContNo2 MTcont">
+							<ul class="formTbl1">
+								<li>
+									<table>
+										<tbody>
+											<tr>
+												<th>エアバッグ類</th>
+												<td>
+													<ul class="tabBox2 col2 is_type2 color2">
+														<li class="tabNo1 show">リサイクル料金の預託状況</li>
+														<li class="tabNo2">廃車時に必要なリサイクル料金</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+						</li><!--/.tabContNo2-->
+					</ul><!--/.tabConts-->
+				</div><!--/.tabBox1-->
+			</div>
 		</section>
 
 		<section>
