@@ -1,7 +1,11 @@
 // JavaScript Document
 $(function(){
 	console.log("hoge");
-
+/* form input type確認用 
+$(".formTbl1 td").each(function(){
+	$(this).prepend("<b>" + $(this).find("input").attr('type') + "</b>");
+});
+*/
 
 //アコーディオン1
 $(".acrdBox1 .acrdBtn").click(function(){

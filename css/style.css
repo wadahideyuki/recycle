@@ -71,6 +71,8 @@ position:relative;
 
 
 /* フォーム */
+/*.formTbl1 td b{color: #00f;font-size: 16px;} form input type確認用 */
+
 input[type="text"],
 input[type="password"],
 input[type="number"]{
