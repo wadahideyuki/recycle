@@ -7,6 +7,12 @@ $(".formTbl1 td").each(function(){
 });
 */
 
+//input type="number"のMAXlength
+$('input[type="number"].maxlengthON').on('input', function () {
+    if ($(this).val().length > $(this).attr('maxlength'))
+        $(this).val($(this).val().slice(0, $(this).attr('maxlength')));
+});	
+
 //アコーディオン1
 $(".acrdBox1 .acrdBtn").click(function(){
 	var parents = $(this).parents(".acrdBox1");

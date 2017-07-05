@@ -2,6 +2,8 @@
 
 body{
 }
+.maxlengthON{
+}
 header{
 	background-color:rgb(255,255,255);
 	text-align:center;
@@ -148,7 +150,7 @@ select{
 
 
 .content{
-	padding:0% 3.125% 90px;
+	padding:0% 3.125% 20%;
 	background:rgb(249,249,249);
 	/*opacity:0.5;*/
 }
